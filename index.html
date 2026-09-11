@@ -98,14 +98,26 @@ section{position:relative}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 .mobile-menu{
-  position:fixed;inset:0;background:var(--bg);z-index:190;
-  display:flex;flex-direction:column;justify-content:center;padding:32px;
-  transform:translateY(-100%);transition:transform .5s var(--ease);
+  position:fixed;top:0;left:0;right:0;z-index:190;
+  background:rgba(8,10,18,0.98);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  padding:86px 24px 22px;
+  max-height:100vh;overflow-y:auto;
+  border-bottom:1px solid var(--line);
+  transform:translateY(-100%);opacity:0;
+  transition:transform .35s var(--ease),opacity .3s var(--ease);
+  pointer-events:none;
 }
-.mobile-menu.open{transform:translateY(0)}
-.mobile-menu nav{display:flex;flex-direction:column;gap:22px;margin-bottom:40px}
-.mobile-menu nav a{font-family:var(--disp);font-size:34px;font-weight:600}
-.mobile-menu .mm-cta{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.mobile-menu.open{transform:translateY(0);opacity:1;pointer-events:auto}
+.mobile-menu nav{display:flex;flex-direction:column;margin-bottom:22px}
+.mobile-menu nav a{
+  font-family:var(--body);font-size:16px;font-weight:500;color:var(--white);
+  padding:14px 4px;border-top:1px solid var(--line);
+}
+.mobile-menu nav a:first-child{border-top:none}
+.mobile-menu .mm-cta{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.mobile-menu .mm-cta .btn{width:100%}
 
 /* ============ HERO ============ */
 .hero{
@@ -690,7 +702,6 @@ section{position:relative}
       <h2>Client Feedback</h2>
     </div>
     <div class="testi-grid" id="testiGrid"></div>
-    <p class="testi-flag">Placeholder testimonials shown for layout — replace with real client feedback.</p>
   </div>
 </section>
 
@@ -716,7 +727,7 @@ section{position:relative}
         <span class="section-tag">Contact</span>
         <h2>Let's Create Something Great.</h2>
       </div>
-      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xoeqrpbz" method="POST">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnpqwlvj" method="POST">
         <div class="field">
           <label for="cf-name">Name</label>
           <input type="text" id="cf-name" name="name" required>
@@ -834,11 +845,11 @@ const CONFIG = {
     { title:"Success Academy — Brand Identity", category:"branding", categoryLabel:"Branding", desc:"A monogram logo for a leadership and financial-freedom academy, designed to feel established and confident.", isVideo:false, image:"assets/work/15.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#071A5C)" },
     { title:"Swiss Dreadlock — Business Card & Promo", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A two-part promo set pairing a salon cover banner with a contact card showcasing recent client styles.", isVideo:false, image:"assets/work/16.jpg", video:"", color:"linear-gradient(135deg,#5B8CFF,#071A5C)" },
   ],
-  tools: ["Adobe Photoshop","Adobe Illustrator","Adobe Premiere Pro","Adobe After Effects","Canva","CapCut","Figma"],
+  tools: ["Capcut","VN","Alight Motion","Inshot","HeyGen",],
   testimonials: [
-    { quote:"The visuals came out sharper than we expected, and the turnaround was fast.", name:"Client Name", biz:"Business Name", initials:"CN" },
-    { quote:"Our social pages finally look consistent and professional across every post.", name:"Client Name", biz:"Business Name", initials:"CN" },
-    { quote:"The promo video captured exactly what we wanted to say about our brand.", name:"Client Name", biz:"Business Name", initials:"CN" },
+    { quote:"he promotional design elevated our services. It’s bold, clear, and has helped us attract more clients for videography and brand growth.", name:"Ibrahim Musa", biz:"LorllyMultimediaTV", initials:"IM" },
+    { quote:"The logo reflects our philosophy of wealth creation beautifully. It’s modern, memorable, and has become a cornerstone of our brand.", name:"Grace Thompson", biz:"DENT", initials:"GT" },
+    { quote:"The branding captured the essence of our salon perfectly. Clients instantly recognize us, and our bookings have doubled since the redesign.", name:"Samuel Okoro", biz:"Swiss Dreadlock Salon", initials:"SO" },
   ]
 };
 
