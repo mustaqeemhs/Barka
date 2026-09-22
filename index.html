@@ -298,7 +298,9 @@ section{position:relative}
 .modal-box{max-width:820px;width:100%;background:var(--bg-elev);border:1px solid var(--line);border-radius:8px;overflow:hidden;transform:scale(.94);transition:transform .35s var(--ease)}
 .modal.open .modal-box{transform:scale(1)}
 .modal-video{aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--bg-elev)}
-.modal-video img,.modal-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.modal-video img,.modal-video video,.modal-video iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.modal-box.vertical{max-width:380px}
+.modal-box.vertical .modal-video{aspect-ratio:9/16}
 .modal-video .play-btn{width:56px;height:56px}
 .modal-video .play-btn::before{border-left-width:16px;border-top-width:10px;border-bottom-width:10px}
 .modal-note{position:absolute;bottom:14px;left:14px;font-size:11px;color:var(--grey);background:rgba(5,7,13,0.6);padding:5px 10px;border-radius:20px}
@@ -702,6 +704,7 @@ section{position:relative}
       <h2>Client Feedback</h2>
     </div>
     <div class="testi-grid" id="testiGrid"></div>
+    <p class="testi-flag">Placeholder testimonials shown for layout — replace with real client feedback.</p>
   </div>
 </section>
 
@@ -844,12 +847,18 @@ const CONFIG = {
     { title:"Gloss & Glow — Logo Design", category:"branding", categoryLabel:"Branding", desc:"A playful, high-shine logo for a beauty brand, built around a lipstick-and-lips mark.", isVideo:false, image:"assets/work/14.jpg", video:"", color:"linear-gradient(135deg,#05070D,#071A5C)" },
     { title:"Success Academy — Brand Identity", category:"branding", categoryLabel:"Branding", desc:"A monogram logo for a leadership and financial-freedom academy, designed to feel established and confident.", isVideo:false, image:"assets/work/15.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#071A5C)" },
     { title:"Swiss Dreadlock — Business Card & Promo", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A two-part promo set pairing a salon cover banner with a contact card showcasing recent client styles.", isVideo:false, image:"assets/work/16.jpg", video:"", color:"linear-gradient(135deg,#5B8CFF,#071A5C)" },
+    /* TEMP TITLES — waiting on one line from you per video to replace these */
+    { title:"AI Ad Class — Registration Promo", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated ad promoting a class that teaches business owners how to create AI ads to advertise their business.", isVideo:true, image:"", video:"", youtubeId:"ehY-uONhhwo", vertical:true, color:"linear-gradient(135deg,#0A3DFF,#071A5C)" },
+    { title:"Inside the Body — Neuron Explainer", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated explainer walking through how neurons work in the body, visualized alongside the brain, heart and other organs.", isVideo:true, image:"", video:"", youtubeId:"US_kHt1YAuQ", vertical:true, color:"linear-gradient(135deg,#5B8CFF,#0A3DFF)" },
+    { title:"Dropshipping Webinar — Promo Ad", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated ad promoting a webinar class that teaches dropshipping.", isVideo:true, image:"", video:"", youtubeId:"jMr5EHSjJ-U", vertical:true, color:"linear-gradient(135deg,#071A5C,#05070D)" },
+    { title:"Noise-Cancelling Blender — Product Ad", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated product ad for a noise-cancelling blender.", isVideo:true, image:"", video:"", youtubeId:"3OS43Yapl2I", vertical:true, color:"linear-gradient(135deg,#0A3DFF,#5B8CFF)" },
+    { title:"DataWallet — Brand Ad", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated brand ad for DataWallet, a data company.", isVideo:true, image:"", video:"", youtubeId:"HmyaYsPvNTA", vertical:true, color:"linear-gradient(135deg,#071A5C,#0A3DFF)" },
   ],
-  tools: ["Capcut","VN","Alight Motion","Inshot","HeyGen",],
+  tools: ["Adobe Photoshop","Adobe Illustrator","Adobe Premiere Pro","Adobe After Effects","Canva","CapCut","Figma"],
   testimonials: [
-    { quote:"he promotional design elevated our services. It’s bold, clear, and has helped us attract more clients for videography and brand growth.", name:"Ibrahim Musa", biz:"LorllyMultimediaTV", initials:"IM" },
-    { quote:"The logo reflects our philosophy of wealth creation beautifully. It’s modern, memorable, and has become a cornerstone of our brand.", name:"Grace Thompson", biz:"DENT", initials:"GT" },
-    { quote:"The branding captured the essence of our salon perfectly. Clients instantly recognize us, and our bookings have doubled since the redesign.", name:"Samuel Okoro", biz:"Swiss Dreadlock Salon", initials:"SO" },
+    { quote:"The visuals came out sharper than we expected, and the turnaround was fast.", name:"Client Name", biz:"Business Name", initials:"CN" },
+    { quote:"Our social pages finally look consistent and professional across every post.", name:"Client Name", biz:"Business Name", initials:"CN" },
+    { quote:"The promo video captured exactly what we wanted to say about our brand.", name:"Client Name", biz:"Business Name", initials:"CN" },
   ]
 };
 
@@ -913,11 +922,13 @@ if (!reduceMotion && window.matchMedia('(hover:hover) and (pointer:fine)').match
 /* ---------- Project grid render + filter ---------- */
 const grid = document.getElementById('projectGrid');
 function renderProjects(){
-  grid.innerHTML = CONFIG.projects.map((p, i) => `
+  grid.innerHTML = CONFIG.projects.map((p, i) => {
+    const thumb = p.image || (p.youtubeId ? `https://img.youtube.com/vi/${p.youtubeId}/hqdefault.jpg` : '');
+    return `
     <div class="project-card" data-cat="${p.category}" data-index="${i}" tabindex="0" role="button" aria-label="View ${p.title}">
       <div class="project-media">
-        ${p.image
-          ? `<img src="${p.image}" alt="${p.title} — ${p.categoryLabel}" loading="lazy">`
+        ${thumb
+          ? `<img src="${thumb}" alt="${p.title} — ${p.categoryLabel}" loading="lazy">`
           : `<div class="ph-gradient" style="position:absolute;inset:0;background:${p.color}"></div><span class="ph-mark">${p.isVideo ? 'PLAY PREVIEW' : 'VIEW IMAGE'}</span>`}
         ${p.isVideo ? '<span class="video-tag">Video</span>' : ''}
         <div class="project-overlay">
@@ -930,7 +941,8 @@ function renderProjects(){
         <p>${p.desc}</p>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
   attachCardEvents();
 }
 function attachCardEvents(){
@@ -966,8 +978,12 @@ function openModal(p){
   modalCat.textContent = p.categoryLabel;
   modalTitle.textContent = p.title;
   modalDesc.textContent = p.desc;
+  modal.querySelector('.modal-box').classList.toggle('vertical', !!p.vertical);
 
-  if (p.video) {
+  if (p.youtubeId) {
+    modalVideo.style.background = 'var(--bg-elev)';
+    modalVideo.innerHTML = `<iframe src="https://www.youtube.com/embed/${p.youtubeId}" title="${p.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+  } else if (p.video) {
     modalVideo.style.background = 'var(--bg-elev)';
     modalVideo.innerHTML = `<video src="${p.video}" ${p.image ? `poster="${p.image}"` : ''} controls playsinline></video>`;
   } else if (p.image) {
@@ -987,6 +1003,8 @@ function closeModal(){
   document.body.style.overflow = '';
   const vid = modalVideo.querySelector('video');
   if (vid) vid.pause();
+  const yt = modalVideo.querySelector('iframe');
+  if (yt) yt.src = '';
 }
 modalClose.addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => { if(e.target===modal) closeModal(); });
