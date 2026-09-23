@@ -1,436 +1,1081 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Al Furqan Online Academy | Online Quran Classes</title>
-<meta name="description" content="Al Furqan Online Academy offers online Quran learning through Quran reading, Tajweed, memorisation, basic Islamic duas and Hadith.">
-<meta name="theme-color" content="#043A2F">
-<link rel="preload" as="image" href="assets/images/hero.jpg" fetchpriority="high">
-<link rel="preload" as="image" href="assets/images/about.jpg">
-<link rel="preload" as="image" href="assets/images/course-memorisation.jpg">
-<link rel="preload" as="image" href="assets/images/course-tajweed.jpg">
-<link rel="preload" as="image" href="assets/images/course-duas.jpg">
-<link rel="preload" as="image" href="assets/images/course-hadith.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Barka Graphics | Graphic Designer &amp; Video Editor</title>
+<meta name="description" content="Al Barka Graphics is a graphic designer and video editor with 4 years of experience creating bold visual designs, branded content and engaging videos.">
+<meta property="og:title" content="Al Barka Graphics | Graphic Designer & Video Editor">
+<meta property="og:description" content="Bold graphic design, video editing and motion content that helps brands stand out.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305070D'/%3E%3Cpath d='M14 46 27 18h6l13 28h-7.2l-2.6-6H23.6l-2.6 6H14Zm12.2-11.6h7.6L30 24.8l-3.8 9.6Z' fill='%230A3DFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--g:#064B3B;--gd:#043A2F;--gold:#F5B900;--acc:#1F8A6B;--pale:#F1F6F3;--ink:#14201C;--mut:#5d6b66;--brown:#87603F;--pad:clamp(16px,4vw,32px);--w:1140px;--sp:clamp(48px,7vw,96px);--half:46px}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{font:400 15px/1.6 Poppins,system-ui,sans-serif;color:var(--ink);background:#fff;overflow-x:clip;-webkit-text-size-adjust:100%}
-img,svg{max-width:100%;display:block}a{color:inherit;text-decoration:none}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.wrap{width:min(var(--w),100% - 2*var(--pad));margin-inline:auto}
-h1,h2,h3{font-weight:700;line-height:1.2}h2{font-size:clamp(1.45rem,3vw + .7rem,2.4rem)}h3{font-size:1rem}
-section{padding:var(--sp) 0}.after{padding-top:calc(var(--sp) + var(--half))}
-.lbl{display:block;font-size:.74rem;font-weight:600;color:var(--acc);margin-bottom:8px}
-.hl{color:var(--acc)}.dk .hl,.hero .hl{color:var(--gold)}
-.head{text-align:center;margin-bottom:clamp(26px,4vw,44px)}.head p{color:var(--mut);margin-top:8px;font-size:.9rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 22px;border-radius:999px;font:600 .85rem Poppins,sans-serif;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s;text-align:center}
-.btn:hover{transform:translateY(-2px)}.btn .ic{width:16px;height:16px}
-.b-g{background:var(--acc);color:#fff}.b-g:hover{background:#177a5d}.b-y{background:var(--gold);color:#1a1400}.b-y:hover{background:#ffc91f}.b-o{border-color:var(--g);color:var(--g)}
-.ic{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,#0b5a4b,#043a2f)}
-.ph::before{content:"";position:absolute;inset:0;opacity:.14;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' fill='none' stroke='%23F5B900'%3E%3Cpath d='M24 4l6 14 14 6-14 6-6 14-6-14L4 24l14-6z'/%3E%3C/svg%3E")}
-.ph::after{content:attr(data-l);position:absolute;left:10px;right:10px;bottom:8px;font-size:.62rem;color:#e3d3a8;opacity:.75;word-break:break-all}
-.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
-/* hero + header */
-.hero{position:relative;color:#fff;min-height:101vh;min-height:101svh;display:flex;flex-direction:column;justify-content:center;padding:clamp(130px,19vh,190px) 0 calc(var(--half) + 44px);background:var(--gd)}
-.hbg{position:absolute;inset:0}.ov{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at 72% 62%,rgba(245,185,0,.12),transparent 55%),linear-gradient(90deg,rgba(4,58,47,.93) 0,rgba(4,58,47,.72) 45%,rgba(4,58,47,.3) 100%),linear-gradient(180deg,rgba(3,28,23,.7) 0,transparent 30%),linear-gradient(0deg,rgba(4,58,47,.88) 0,transparent 42%)}
-.hbg img{object-position:50% 56%;transform-origin:60% 58%;animation:kb 26s ease-in-out infinite alternate}@keyframes kb{to{transform:scale(1.07)}}
-.hero .wrap{position:relative;z-index:3}
-.top{position:absolute;top:0;left:0;right:0;z-index:5;font-size:.72rem;color:#e7efe9}.top .wrap{display:flex;justify-content:space-between;align-items:center;height:42px}
-.top a{display:inline-flex;gap:6px;align-items:center;margin-right:18px}.top .ic{width:14px;height:14px;color:var(--gold)}
-.top .wa-c{width:26px;height:26px;border-radius:50%;background:var(--gold);justify-content:center;margin:0}.top .wa-c .ic{color:var(--gd)}
-.nav{position:fixed;top:46px;left:0;right:0;margin:0 auto;width:min(var(--w),100% - 2*var(--pad));z-index:60;background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.18);transition:top .3s}
-.nav.is-scrolled{top:10px}
-.ni{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 14px 0 20px;gap:12px}
-.brand{display:flex;align-items:center;gap:9px;font-weight:700;color:var(--g);font-size:.95rem;letter-spacing:.03em;line-height:1.1}.brand svg{width:34px;height:34px;flex:none}.brand i{font-style:normal;color:var(--acc)}
-.menu{display:flex;gap:26px;font-size:.85rem;font-weight:500}.menu a:hover{color:var(--acc)}
-.nr{display:flex;gap:8px;align-items:center}.nr .btn{min-height:42px;padding:8px 20px}
-.burger{display:none;width:38px;height:38px;border:0;border-radius:8px;background:var(--pale);color:var(--g);cursor:pointer;place-items:center}
-.hc{max-width:640px}.ars{display:block;font:400 clamp(1.4rem,3.4vw,2.1rem)/1.6 Amiri,serif;color:var(--gold);direction:rtl;text-align:left;margin-bottom:6px}
-h1{font-size:clamp(1.7rem,4vw + .7rem,3.4rem);letter-spacing:-.01em}
-.hero p.lead{margin:16px 0 26px;font-size:clamp(.82rem,1.2vw + .5rem,1rem);color:#dbe6e0;max-width:480px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.ovl{position:absolute;left:50%;bottom:0;transform:translate(-50%,50%);width:min(var(--w),100% - 2*var(--pad));z-index:4}
-.strip{background:var(--g);border-radius:16px;padding:clamp(16px,2.4vw,24px) clamp(14px,3vw,28px);display:grid;grid-template-columns:repeat(4,1fr);gap:16px;box-shadow:0 18px 36px rgba(4,58,47,.3);color:#fff}
-.si{display:flex;gap:11px;align-items:center}.si .i{width:42px;height:42px;border:1.5px solid var(--gold);border-radius:50%;color:var(--gold);display:grid;place-items:center;flex:none}.si .ic{width:20px;height:20px}
-.si b{display:block;font-size:.8rem;line-height:1.3}.si small{display:block;font-size:.68rem;color:#bcd0c8;line-height:1.35;margin-top:2px}
-/* about / why */
-.ab{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,64px);align-items:center}.ab p{color:var(--mut);font-size:.9rem;margin-top:14px}
-.ab .ph{aspect-ratio:1/.9;border-radius:16px;box-shadow:0 18px 40px rgba(4,58,47,.18)}
-.pts{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:20px 0 26px;font-size:.84rem}.pts span{display:flex;gap:9px;align-items:center}.pts i{width:20px;height:20px;border-radius:50%;background:#dcece5;color:var(--acc);display:grid;place-items:center;flex:none}.pts svg{width:11px;height:11px;stroke-width:3}
-.pale{background:var(--pale)}.why{position:relative;padding-bottom:calc(var(--sp) + var(--half))}
-.wy{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.wc{background:#fff;border-radius:12px;padding:24px 18px;text-align:center;box-shadow:0 6px 20px rgba(4,58,47,.07)}.wc .ic{width:34px;height:34px;color:var(--acc);margin:0 auto 12px}.wc p{color:var(--mut);font-size:.78rem;margin-top:6px}.wc h3{font-size:.9rem}
-/* courses */
-.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.cc{background:var(--pale);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}.cc:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(4,58,47,.14)}
-.cc .ph{aspect-ratio:16/11}.cc .b{padding:16px;flex:1;display:flex;flex-direction:column}.cc h3{font-size:.95rem}.cc p{font-size:.78rem;color:var(--mut);margin:6px 0 12px;flex:1}
-.mo{font-size:.72rem;font-weight:600;color:var(--acc);display:inline-flex;gap:5px;align-items:center}.mo .ic{width:13px;height:13px;transition:transform .2s}.cc:hover .mo .ic{transform:translateX(4px)}
-/* quran */
-.wood{max-width:480px;margin:0 auto;padding:clamp(12px,2vw,20px);border-radius:24px;background:repeating-linear-gradient(92deg,rgba(0,0,0,.05) 0 2px,transparent 2px 9px),linear-gradient(135deg,#9a6f49,#6d4a2e 60%,#87603F);box-shadow:0 30px 60px rgba(0,0,0,.4),inset 0 2px 0 rgba(255,255,255,.18)}
-.stage{perspective:2200px;padding:8px 0 12px}
-.book{position:relative;width:100%;aspect-ratio:1.42/1;perspective:2600px;touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab;outline-offset:6px;filter:none}
-.book:active{cursor:grabbing}
-.book::before{content:"";position:absolute;z-index:-1;inset:-10px -10px -14px;border-radius:10px;background:linear-gradient(135deg,#0b6a55,#043a2f);box-shadow:inset 0 0 0 2px rgba(245,185,0,.6),inset 0 0 0 7px rgba(0,0,0,.12),inset 0 0 0 8px rgba(245,185,0,.3),0 22px 34px rgba(0,0,0,.5)}
-.book::after{content:"";position:absolute;z-index:-1;left:.6%;right:.6%;bottom:-7px;height:10px;border-radius:0 0 4px 4px;background:repeating-linear-gradient(90deg,#efe6cb 0 2px,#cdbf9b 2px 3px)}
-.leaf{position:absolute;top:0;left:0;width:50%;height:100%;transform-origin:right center;transform-style:preserve-3d;will-change:transform}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#f1ead2;overflow:hidden}
-.face.bk{transform:rotateY(180deg)}
-.face img{width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
-.face::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to left,rgba(0,0,0,.28),transparent 20%);opacity:1}
-.face.bk::after{background:linear-gradient(to right,rgba(0,0,0,.28),transparent 20%)}
-.face i{position:absolute;inset:0;background:#000;opacity:var(--s,0);z-index:3;pointer-events:none}
-.face .miss{position:absolute;inset:8%;border:1.5px solid rgba(135,96,63,.5);display:none;place-items:center;text-align:center;color:var(--brown);font-size:.7rem;padding:8px;line-height:1.4}
-.face.m .miss{display:grid}
-.ctl{display:flex;justify-content:center;gap:12px;align-items:center;margin-top:22px;color:#e6ded0;font-size:.85rem}
-.ctl button{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.5);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;display:grid;place-items:center}.ctl button:hover{background:rgba(255,255,255,.2)}
+:root{
+  --blue:#0A3DFF;
+  --blue-light:#5B8CFF;
+  --bg:#05070D;
+  --bg-elev:#0B0F1C;
+  --navy:#071A5C;
+  --white:#FFFFFF;
+  --grey:#A7ADBA;
+  --grey-dim:#5C6274;
+  --line:rgba(167,173,186,0.16);
+  --radius:2px;
+  --ease:cubic-bezier(.16,.8,.24,1);
+  --disp:'Space Grotesk',sans-serif;
+  --body:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:var(--body);
+  line-height:1.5;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit}
+ul{list-style:none}
+h1,h2,h3,h4{font-family:var(--disp);font-weight:600;line-height:1.05;letter-spacing:-0.01em}
+.container{max-width:1240px;margin:0 auto;padding:0 32px}
+section{position:relative}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--blue);color:#fff;padding:12px 20px;z-index:999}
+.skip-link:focus{left:16px;top:16px}
+:focus-visible{outline:2px solid var(--blue-light);outline-offset:3px}
 
-.qs{padding:clamp(32px,4vw,52px) 0}.qs .head{margin-bottom:20px}.qs .ctl{margin-top:14px;color:var(--ink)}.qs .ctl button{border-color:var(--g);background:#fff;color:var(--g)}
-/* how */
-.hw{background:var(--g);border-radius:24px;padding:clamp(28px,5vw,52px) clamp(16px,4vw,48px);color:#fff}.hw .head{margin-bottom:34px}
-.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.sc{position:relative;background:#fff;color:var(--ink);border-radius:12px;padding:30px 20px 24px;text-align:center}
-.sc .n{position:absolute;top:-11px;left:-6px;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#1a1400;font:700 .75rem/28px Poppins;text-align:center}
-.sc .ic{width:52px;height:52px;padding:14px;border-radius:50%;background:var(--pale);color:var(--acc);margin:0 auto 12px}.sc h3{font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;color:var(--g)}.sc p{font-size:.82rem;color:var(--mut);margin-top:6px}
-.verse{background:var(--gd);color:#fff;text-align:center;position:relative;overflow:hidden}
-.verse::before{content:"";position:absolute;inset:0;opacity:.07;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' fill='none' stroke='%23F5B900'%3E%3Cpath d='M45 8l11 26 26 11-26 11-11 26-11-26-26-11 26-11z'/%3E%3Ccircle cx='45' cy='45' r='14'/%3E%3C/svg%3E")}
-.verse .wrap{position:relative}.ar{font-family:Amiri,serif;direction:rtl;line-height:2;font-size:clamp(1.7rem,5.4vw,3.2rem);color:var(--gold)}
-.verse blockquote{font-size:clamp(1rem,2.2vw,1.3rem);margin:14px auto 8px;max-width:620px;font-weight:500}.verse p{color:#bcd0c8;font-size:.9rem}
-/* form */
-.fb{max-width:800px;margin:0 auto;background:#fff;border-radius:16px;padding:clamp(20px,4.5vw,40px);box-shadow:0 16px 40px rgba(4,58,47,.1)}
-.fee{background:#e6f1ec;border-left:4px solid var(--acc);border-radius:8px;padding:12px 14px;font-size:.84rem;margin-bottom:20px;color:var(--g)}
-.fgd{display:grid;grid-template-columns:1fr 1fr;gap:16px}.fgd .full{grid-column:1/-1}
-label{display:block;font-size:.78rem;font-weight:600;color:var(--g);margin-bottom:5px}
-input,select,textarea{width:100%;min-height:48px;padding:11px 13px;border:1.5px solid #d6e0db;border-radius:10px;font:inherit;font-size:16px;background:#fff;color:var(--ink)}
-textarea{min-height:100px;resize:vertical}input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(245,185,0,.35)}
-.chk{display:flex;gap:11px;align-items:flex-start;font-weight:400;font-size:.86rem;color:var(--ink)}.chk input{width:22px;min-height:22px;height:22px;margin-top:2px;accent-color:var(--acc)}
-.fb .btn{width:100%}.note{font-size:.8rem;color:var(--mut);margin-top:14px;text-align:center}
-.err{background:#fbeeea;color:#8a2f1c;border-radius:10px;padding:13px;font-size:.88rem;margin-top:14px}
-.spin{width:42px;height:42px;border:4px solid #dbe6e0;border-top-color:var(--acc);border-radius:50%;animation:sp .9s linear infinite;margin:0 auto 14px}@keyframes sp{to{transform:rotate(360deg)}}
-.ok{text-align:center;padding:10px 0}.ok .tick{width:72px;height:72px;border-radius:50%;background:var(--g);color:var(--gold);display:grid;place-items:center;margin:0 auto 16px;animation:pop .6s cubic-bezier(.2,.9,.3,1.2)}.ok .tick .ic{width:36px;height:36px;stroke-width:2.4}@keyframes pop{from{transform:scale(.4);opacity:0}}
-.ok h3{font-size:1.5rem;color:var(--g)}.ok p{color:var(--mut);margin:10px auto;max-width:460px}.ok .cta-row{justify-content:center;margin-top:18px}.ok .btn{width:auto}
-/* faq */
-.faq{max-width:780px;margin:0 auto;display:grid;gap:10px}.faq details{background:var(--pale);border-radius:12px}
-.faq summary{list-style:none;cursor:pointer;padding:15px 18px;min-height:54px;display:flex;justify-content:space-between;align-items:center;gap:14px;font-weight:600;font-size:.92rem}
-.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";font-size:1.5rem;color:var(--acc);transition:transform .25s;flex:none}.faq details[open] summary::after{transform:rotate(45deg)}
-.faq p{padding:0 18px 18px;color:var(--mut);font-size:.88rem;animation:fd .3s}@keyframes fd{from{opacity:0;transform:translateY(-6px)}}
-/* cta + footer */
-.cta{background:var(--gold);padding:28px 0;color:#1a1400}.cta .wrap{display:flex;align-items:center;gap:18px;justify-content:space-between;flex-wrap:wrap}
-.cta .l{display:flex;gap:16px;align-items:center}.cta .ci{width:54px;height:54px;border-radius:50%;background:var(--gd);color:var(--gold);display:grid;place-items:center;flex:none}
-.cta h2{font-size:clamp(1.15rem,2vw + .5rem,1.6rem)}.cta p{font-size:.84rem}
-footer{background:var(--gd);color:#c3d3cc;padding:48px 0 0;font-size:.85rem}
-.f4{display:grid;grid-template-columns:1.4fr .8fr 1fr 1.2fr;gap:32px}footer h4{color:#fff;font-size:.95rem;margin-bottom:12px}footer ul{list-style:none;padding:0;display:grid;gap:7px}footer a:hover{color:var(--gold)}footer a{overflow-wrap:anywhere}
-footer .brand{color:#fff;margin-bottom:10px}footer .brand i{color:var(--gold)}.f4 p{line-height:1.6}.f4 .fa{font:400 1.3rem Amiri,serif;color:var(--gold);direction:rtl;text-align:left;margin-top:8px}
-.copy{border-top:1px solid rgba(255,255,255,.1);text-align:center;padding:18px 0;margin-top:32px;font-size:.75rem}
-.bn{display:none;position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:70;background:#fff;border-radius:18px;box-shadow:0 8px 28px rgba(0,0,0,.28);padding:6px;justify-content:space-around;align-items:flex-end}
-.bn a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:.62rem;font-weight:600;color:var(--mut);min-width:54px;min-height:48px}.bn .ic{width:20px;height:20px}
-.bn .c{margin-top:-26px}.bn .c span{width:52px;height:52px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;border:4px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.25)}
-.rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
-@media(max-width:1000px){.cg,.wy{grid-template-columns:repeat(2,1fr)}.f4{grid-template-columns:1fr 1fr}.f4>:first-child{grid-column:1/-1}}
-@media(max-width:900px){.menu{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border-radius:14px;padding:6px 18px 12px;flex-direction:column;gap:0;box-shadow:0 14px 30px rgba(0,0,0,.2)}.menu.open{display:flex}.menu a{padding:13px 0;border-bottom:1px solid #eef2f0;min-height:46px}.burger{display:grid}}
-@media(max-width:860px){:root{--half:72px}body{padding-bottom:88px}.bn{display:flex}.top .em{display:none}.nav{top:44px}.ni{height:54px;padding:0 10px 0 14px}.brand{font-size:.72rem}.brand i{display:block}.brand svg{width:30px;height:30px}.nr .btn{min-height:38px;padding:6px 14px;font-size:.72rem}.nr .btn .ic{display:none}
-.hero{padding-top:128px}.strip{grid-template-columns:1fr 1fr;gap:14px 12px}.si{gap:9px}.si .i{width:34px;height:34px}.si .ic{width:16px;height:16px}.si b{font-size:.74rem}.si small{font-size:.62rem}
-.ab{grid-template-columns:1fr}.ab .ph{order:-1;aspect-ratio:4/3.2}.pts{grid-template-columns:1fr}.hw{border-radius:16px}.sg{grid-template-columns:1fr;gap:16px}.sc{display:flex;gap:12px;text-align:left;align-items:center;padding:16px 16px 16px 20px}.sc .ic{margin:0;flex:none}.sc h3{letter-spacing:.06em}
-.fgd{grid-template-columns:1fr}.cta .wrap{flex-direction:column;align-items:flex-start}.cta .cta-row{width:100%}.cta .btn{flex:1}}
-@media(max-width:600px){.cc .b{padding:12px}.cc h3{font-size:.86rem}.cc p{font-size:.72rem}.wc{padding:18px 12px}.cta-row .btn{flex:1 1 auto}.wood{border-radius:14px}}
-@media(max-width:360px){.brand svg{display:none}.nr .btn{padding:6px 10px}.cg,.wy{grid-template-columns:1fr}}
-@media(max-width:860px){#hstrip{display:none}.hbg img{object-position:50% 42%}.ov{background:linear-gradient(180deg,rgba(3,28,23,.78) 0,rgba(4,58,47,.66) 40%,rgba(4,58,47,.9) 100%)}.hero{padding-bottom:48px}#about.after{padding-top:var(--sp)}.nr .btn{display:none}}
-@media(max-width:600px){body{font-size:14px}h1{font-size:clamp(1.5rem,6.6vw,1.85rem)}h2{font-size:1.3rem}h3{font-size:.9rem}.ars{font-size:1.25rem}.hero p.lead{font-size:.8rem;margin:12px 0 20px}.btn{min-height:42px;padding:8px 18px;font-size:.78rem}.hc .btn{flex:1 1 0;padding:8px 10px;white-space:nowrap}.head{margin-bottom:22px}.head p,.ab p{font-size:.82rem}.lbl{font-size:.7rem}.wc h3{font-size:.82rem}.wc p{font-size:.72rem}.si b{font-size:.7rem}.pts{font-size:.8rem}.faq summary{font-size:.84rem;min-height:50px;padding:12px 14px}.faq p{font-size:.82rem}.sc h3{font-size:.8rem}.sc p{font-size:.76rem}.sc .ic{width:44px;height:44px;padding:11px}.ar{font-size:1.6rem}.verse blockquote{font-size:.95rem}.cta h2{font-size:1.05rem}.cta .ci{width:44px;height:44px}input,select{min-height:44px}.bn a{font-size:.58rem}.bn .c span{width:46px;height:46px}.bn .c{margin-top:-22px}footer{font-size:.8rem}.ni{height:50px}.brand{font-size:.7rem}}
-[data-img=about] img{object-position:50% 68%}
-.vp{container-type:inline-size;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12%}
-.vp::before{content:"";position:absolute;inset:6%;border:1px solid rgba(135,96,63,.55);outline:1px solid rgba(135,96,63,.3);outline-offset:-5px;pointer-events:none}
-.vp .va{font:400 9.4cqw/1.95 Amiri,serif;color:#064B3B}
-.vp .dv{display:block;width:34%;height:1px;margin:5cqw 0;position:relative;background:linear-gradient(90deg,transparent,#87603F,transparent)}
-.vp .dv::after{content:"";position:absolute;left:50%;top:50%;width:1.8cqw;height:1.8cqw;background:#C49A45;transform:translate(-50%,-50%) rotate(45deg)}
-.vp .ve{font:italic 500 4.3cqw/1.55 Poppins,sans-serif;color:#3b4a44}
-.vp .vr{font:600 3.2cqw Poppins,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#87603F;margin-top:3.5cqw}
+/* ============ HEADER ============ */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  padding:22px 0;
+  transition:background .4s var(--ease),backdrop-filter .4s var(--ease),border-color .4s var(--ease),padding .3s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.site-header.scrolled{
+  background:rgba(5,7,13,0.72);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:var(--disp);font-weight:700;font-size:15px;line-height:1.15;letter-spacing:0.02em}
+.logo span{display:block;color:var(--blue-light)}
+.main-nav{display:flex;gap:36px}
+.main-nav a{
+  font-size:13px;font-weight:500;letter-spacing:0.08em;color:var(--grey);
+  position:relative;padding:4px 0;transition:color .25s;
+}
+.main-nav a::after{
+  content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--blue-light);
+  transition:width .3s var(--ease);
+}
+.main-nav a:hover,.main-nav a:focus-visible{color:var(--white)}
+.main-nav a:hover::after,.main-nav a:focus-visible::after{width:100%}
+.header-cta{display:flex;align-items:center;gap:18px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-size:13px;font-weight:600;letter-spacing:0.06em;
+  padding:13px 26px;border-radius:var(--radius);
+  transition:transform .3s var(--ease),background .3s,border-color .3s,color .3s;
+  white-space:nowrap;
+}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-light);transform:translateY(-2px)}
+.btn-outline{border:1px solid var(--line);color:var(--white)}
+.btn-outline:hover{border-color:var(--blue-light);color:var(--blue-light);transform:translateY(-2px)}
+.btn-ghost{color:var(--grey);border-bottom:1px solid var(--line)}
+.btn-ghost:hover{color:var(--white);border-color:var(--white)}
+.hamburger{display:none;flex-direction:column;gap:5px;width:26px;z-index:210}
+.hamburger span{display:block;height:2px;background:var(--white);border-radius:2px;transition:transform .3s var(--ease),opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-/* hero badge */
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,185,0,.14);border:1px solid rgba(245,185,0,.55);color:var(--gold);font:600 .72rem Poppins;letter-spacing:.05em;padding:8px 14px;border-radius:999px;margin-bottom:16px}
-.badge .ic{width:14px;height:14px}.badge i{font-style:normal;color:#e7dcc0;font-weight:500}
-.b-out{border:2px solid rgba(255,255,255,.7);color:#fff;background:transparent}.b-out:hover{background:rgba(255,255,255,.12)}
-/* registration limited-spots note */
-.spots{max-width:640px;margin:-14px auto 26px;text-align:center;display:flex;gap:8px;align-items:center;justify-content:center;font-size:.84rem;color:var(--brown);background:#fdf3da;border:1px solid #f0dfa8;border-radius:10px;padding:10px 16px}
-.spots .ic{width:16px;height:16px;color:var(--gold);flex:none}
-/* pricing */
-.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
-.pc{background:#fff;border:1.5px solid #e4e9e6;border-radius:18px;padding:28px 24px;position:relative;display:flex;flex-direction:column;box-shadow:0 8px 26px rgba(4,58,47,.06)}
-.pc.rec{border-color:var(--gold);border-width:2px;box-shadow:0 20px 44px rgba(4,58,47,.16);transform:translateY(-10px)}
-.pop{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#1a1400;font:700 .68rem Poppins;letter-spacing:.06em;text-transform:uppercase;padding:6px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 14px rgba(245,185,0,.4)}
-.pb{display:inline-block;align-self:flex-start;font:700 .66rem Poppins;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);background:var(--pale);padding:5px 12px;border-radius:999px;margin-bottom:14px}
-.pc.rec .pb{color:#8a6a00;background:#fff5db}
-.pc h3{font-size:1.06rem}
-.pp{display:flex;align-items:baseline;gap:8px;margin:12px 0 4px}.pp b{font-size:1.9rem;color:var(--g);font-weight:700}.pp small{font-size:.72rem;color:var(--mut);font-weight:600;letter-spacing:.04em}
-.pd{color:var(--mut);font-size:.84rem;margin-bottom:18px;min-height:44px}
-.pc .btn{width:100%;margin-bottom:20px}
-.pf{list-style:none;padding:0;display:grid;gap:10px;flex:1}.pf li{display:flex;gap:9px;align-items:flex-start;font-size:.83rem;color:var(--ink)}.pf li .ic{width:17px;height:17px;color:var(--acc);flex:none;margin-top:1px;stroke-width:2.4}
-.pn{font-size:.76rem;color:var(--mut);margin-top:16px;text-align:center;border-top:1px solid #eef2f0;padding-top:14px}
-/* free-class cta band */
-.fcta-b{max-width:640px;margin:0 auto;text-align:center;background:var(--g);color:#fff;border-radius:22px;padding:clamp(28px,5vw,44px) clamp(20px,5vw,44px);box-shadow:0 20px 44px rgba(4,58,47,.2)}
-.fbadge{display:inline-block;background:var(--gold);color:#1a1400;font:700 .68rem Poppins;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:999px;margin-bottom:16px}
-.fcta-b h2{font-size:clamp(1.3rem,3vw,1.8rem)}.fcta-b p{color:#d6e4de;font-size:.9rem;margin:12px auto 22px;max-width:460px}
-.fdet{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 20px;margin-bottom:26px}.fdet span{display:flex;gap:7px;align-items:center;font-size:.8rem;color:#e6efe9;font-weight:500}.fdet .ic{width:16px;height:16px;color:var(--gold)}
-/* whatsapp companion */
-.wac{padding:0}.wact{background:var(--gd);border-radius:22px;padding:clamp(26px,5vw,44px);color:#fff;text-align:center;max-width:680px;margin:0 auto}
-.wact ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;margin:18px 0 26px;text-align:left;max-width:520px;margin-inline:auto}
-.wact li{display:flex;gap:9px;align-items:center;font-size:.85rem;color:#dbe6e0}.wact li .ic{width:16px;height:16px;color:var(--gold);flex:none}
-.sg4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:1000px){.pg{grid-template-columns:1fr}.pc.rec{transform:none}.wact ul{grid-template-columns:1fr}}
-@media(max-width:900px){.sg4{grid-template-columns:1fr 1fr}}
-@media(max-width:860px){.badge{font-size:.64rem;padding:7px 12px}.badge i{display:none}}
-@media(max-width:600px){.sg4{grid-template-columns:1fr}.pc{padding:22px 18px}.fcta-b{border-radius:16px}.fdet{gap:8px 14px}.fdet span{font-size:.74rem}.wact{border-radius:16px}.spots{font-size:.78rem;padding:9px 12px;margin-top:-6px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
-</style></head>
+.mobile-menu{
+  position:fixed;top:0;left:0;right:0;z-index:190;
+  background:rgba(8,10,18,0.98);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  padding:86px 24px 22px;
+  max-height:100vh;overflow-y:auto;
+  border-bottom:1px solid var(--line);
+  transform:translateY(-100%);opacity:0;
+  transition:transform .35s var(--ease),opacity .3s var(--ease);
+  pointer-events:none;
+}
+.mobile-menu.open{transform:translateY(0);opacity:1;pointer-events:auto}
+.mobile-menu nav{display:flex;flex-direction:column;margin-bottom:22px}
+.mobile-menu nav a{
+  font-family:var(--body);font-size:16px;font-weight:500;color:var(--white);
+  padding:14px 4px;border-top:1px solid var(--line);
+}
+.mobile-menu nav a:first-child{border-top:none}
+.mobile-menu .mm-cta{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.mobile-menu .mm-cta .btn{width:100%}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding:150px 0 90px;
+  position:relative;
+  background:
+    radial-gradient(60% 50% at 82% 18%, rgba(10,61,255,0.16), transparent 70%),
+    var(--bg);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px;align-items:center;
+}
+.eyebrow{
+  font-size:12.5px;font-weight:600;letter-spacing:0.14em;color:var(--blue-light);
+  display:flex;align-items:center;gap:10px;margin-bottom:26px;
+}
+.eyebrow::before{content:'';width:26px;height:1px;background:var(--blue-light)}
+.hero h1{
+  font-size:clamp(2.6rem,5.4vw,4.6rem);
+  text-transform:uppercase;
+  margin-bottom:26px;
+}
+.hero h1 em{font-style:normal;color:var(--blue-light)}
+.hero-desc{
+  max-width:440px;color:var(--grey);font-size:16.5px;margin-bottom:36px;
+}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
+.hero-stat{display:flex;align-items:center;gap:16px}
+.hero-stat .num{font-family:var(--disp);font-size:2.4rem;font-weight:700;color:var(--white)}
+.hero-stat .label{font-size:11.5px;letter-spacing:0.1em;color:var(--grey);line-height:1.3;text-transform:uppercase}
+
+/* Hero creative composition */
+.hero-visual{position:relative;height:520px;perspective:1200px}
+.canvas-frame{
+  position:absolute;inset:40px 10px 60px 40px;
+  background:linear-gradient(155deg,var(--bg-elev),#050710);
+  border:1px solid var(--line);
+  border-radius:6px;
+  box-shadow:0 40px 80px -30px rgba(0,0,0,0.7);
+  overflow:hidden;
+}
+.canvas-frame::before{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(rgba(167,173,186,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(167,173,186,0.05) 1px,transparent 1px);
+  background-size:24px 24px;
+  mask-image:radial-gradient(circle at 30% 30%, black, transparent 75%);
+}
+.canvas-header{
+  display:flex;align-items:center;gap:8px;padding:14px 18px;border-bottom:1px solid var(--line);position:relative;z-index:2;
+}
+.canvas-header .dot{width:8px;height:8px;border-radius:50%;background:var(--grey-dim)}
+.canvas-header .dot:nth-child(1){background:#0A3DFF}
+.canvas-header .fname{margin-left:10px;font-size:11px;color:var(--grey-dim);letter-spacing:0.04em}
+.canvas-body{position:relative;height:calc(100% - 46px);padding:22px}
+
+.art-shape{position:absolute;border-radius:4px}
+.shape-a{width:120px;height:78px;background:linear-gradient(135deg,var(--blue),#5B8CFF);top:16%;left:8%;box-shadow:0 20px 40px -14px rgba(10,61,255,0.5);animation:floatA 7s ease-in-out infinite}
+.shape-b{width:64px;height:64px;border:2px solid var(--blue-light);top:44%;left:52%;border-radius:50%;animation:floatB 8s ease-in-out infinite}
+.shape-c{width:90px;height:60px;background:rgba(167,173,186,0.08);border:1px solid var(--line);top:10%;left:56%;animation:floatC 9s ease-in-out infinite}
+.type-sample{
+  position:absolute;top:34%;left:8%;font-family:var(--disp);font-weight:700;font-size:26px;color:var(--white);
+  opacity:0.9;animation:floatA 6.5s ease-in-out infinite;
+}
+.type-sample span{color:var(--blue-light)}
+.swatches{position:absolute;bottom:20%;left:8%;display:flex;gap:6px;animation:floatB 7.5s ease-in-out infinite}
+.swatch{width:20px;height:20px;border-radius:3px}
+.crop{position:absolute;width:16px;height:16px;border-top:2px solid var(--blue-light);border-left:2px solid var(--blue-light)}
+.crop.br{border-top:none;border-left:none;border-bottom:2px solid var(--blue-light);border-right:2px solid var(--blue-light)}
+.crop-tl{top:14%;right:14%}
+.crop-br{bottom:34%;right:16%}
+.cursor-dot{
+  position:absolute;bottom:16%;left:46%;width:0;height:0;
+  border-left:9px solid var(--white);border-bottom:14px solid transparent;
+  transform:rotate(-12deg);filter:drop-shadow(0 3px 6px rgba(0,0,0,0.5));
+  animation:cursorMove 6s ease-in-out infinite;
+}
+.sel-box{
+  position:absolute;top:30%;left:48%;width:110px;height:70px;
+  border:1px dashed var(--blue-light);border-radius:2px;opacity:0.75;
+  animation:floatC 8.5s ease-in-out infinite;
+}
+
+@keyframes floatA{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(6px,-10px) rotate(1.5deg)}}
+@keyframes floatB{0%,100%{transform:translate(0,0)}50%{transform:translate(-8px,8px)}}
+@keyframes floatC{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(10px,4px) rotate(-2deg)}}
+@keyframes cursorMove{0%,100%{transform:translate(0,0) rotate(-12deg)}50%{transform:translate(18px,-14px) rotate(-12deg)}}
+
+.timeline-panel{
+  position:absolute;left:22px;right:22px;bottom:20px;
+  background:rgba(5,7,13,0.85);border:1px solid var(--line);border-radius:5px;
+  padding:14px 16px;backdrop-filter:blur(6px);
+}
+.tl-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.play-btn{
+  width:26px;height:26px;border-radius:50%;background:var(--blue);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  animation:pulse 2.4s ease-in-out infinite;
+}
+.play-btn::before{content:'';border-left:8px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(10,61,255,0.5)}50%{box-shadow:0 0 0 8px rgba(10,61,255,0)}}
+.waveform{display:flex;align-items:center;gap:2px;height:20px;flex:1}
+.waveform span{width:2px;background:var(--blue-light);border-radius:1px;animation:wave 1.2s ease-in-out infinite}
+.tl-track{position:relative;height:26px;background:rgba(167,173,186,0.08);border-radius:3px;overflow:hidden}
+.clip{position:absolute;top:3px;bottom:3px;border-radius:2px}
+.clip1{left:2%;width:26%;background:linear-gradient(90deg,#0A3DFF,#5B8CFF)}
+.clip2{left:30%;width:20%;background:rgba(167,173,186,0.35)}
+.clip3{left:53%;width:32%;background:linear-gradient(90deg,#071A5C,#0A3DFF)}
+.clip4{left:88%;width:10%;background:rgba(167,173,186,0.25)}
+.playhead{position:absolute;top:-4px;bottom:-4px;width:2px;background:#fff;box-shadow:0 0 8px var(--blue-light);animation:scrub 6s linear infinite}
+@keyframes scrub{0%{left:0}100%{left:98%}}
+
+.hero-visual-mobile-note{display:none}
+
+/* ============ SECTION HEADS ============ */
+.section-pad{padding:130px 0}
+.section-head{max-width:640px;margin-bottom:64px}
+.section-head h2{font-size:clamp(1.9rem,3.6vw,3rem);text-transform:uppercase;margin-bottom:16px}
+.section-head p{color:var(--grey);font-size:16px;max-width:480px}
+.section-tag{font-size:12px;letter-spacing:0.12em;color:var(--blue-light);font-weight:600;margin-bottom:14px;display:block}
+
+/* ============ WORK ============ */
+.work{background:var(--bg)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:48px}
+.filter-btn{
+  padding:10px 20px;border:1px solid var(--line);border-radius:30px;font-size:12.5px;
+  letter-spacing:0.05em;color:var(--grey);transition:all .3s var(--ease);
+}
+.filter-btn:hover{border-color:var(--blue-light);color:var(--white)}
+.filter-btn.active{background:var(--white);color:var(--bg);border-color:var(--white)}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.project-card{
+  position:relative;border-radius:6px;overflow:hidden;background:var(--bg-elev);
+  border:1px solid var(--line);
+  transition:transform .5s var(--ease),opacity .5s var(--ease);
+  cursor:pointer;
+}
+.project-card.hide{display:none}
+.project-media{
+  position:relative;aspect-ratio:4/3;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.project-media .ph-gradient{position:absolute;inset:0;transition:transform .7s var(--ease)}
+.project-card:hover .ph-gradient{transform:scale(1.08)}
+.project-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.project-card:hover .project-media img{transform:scale(1.08)}
+.project-media .ph-mark{position:relative;z-index:2;font-family:var(--disp);font-size:13px;letter-spacing:0.1em;color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.35);padding:6px 14px;border-radius:30px}
+.project-overlay{
+  position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,61,255,0.55),rgba(5,7,13,0.15));
+  opacity:0;transition:opacity .4s var(--ease);display:flex;align-items:flex-end;padding:22px;z-index:3;
+}
+.project-card:hover .project-overlay,.project-card:focus-within .project-overlay{opacity:1}
+.overlay-link{
+  font-size:12.5px;font-weight:600;letter-spacing:0.06em;color:#fff;
+  display:flex;align-items:center;gap:8px;
+  transform:translateY(10px);opacity:0;transition:all .4s var(--ease) .05s;
+}
+.project-card:hover .overlay-link,.project-card:focus-within .overlay-link{transform:translateY(0);opacity:1}
+.video-tag{
+  position:absolute;top:14px;right:14px;background:rgba(5,7,13,0.8);border:1px solid var(--line);
+  border-radius:20px;padding:5px 10px;font-size:10.5px;letter-spacing:0.06em;color:var(--grey);z-index:3;
+  display:flex;align-items:center;gap:5px;
+}
+.video-tag::before{content:'';width:0;height:0;border-left:6px solid var(--blue-light);border-top:4px solid transparent;border-bottom:4px solid transparent}
+.project-info{padding:20px 22px 24px}
+.project-info .cat{font-size:11px;letter-spacing:0.1em;color:var(--blue-light);text-transform:uppercase;margin-bottom:6px;display:block}
+.project-info h3{font-size:19px;margin-bottom:8px}
+.project-info p{font-size:14px;color:var(--grey)}
+
+/* ============ MODAL ============ */
+.modal{
+  position:fixed;inset:0;background:rgba(5,7,13,0.92);z-index:300;
+  display:flex;align-items:center;justify-content:center;padding:24px;
+  opacity:0;pointer-events:none;transition:opacity .35s var(--ease);
+}
+.modal.open{opacity:1;pointer-events:auto}
+.modal-box{position:relative;width:fit-content;max-width:820px;max-height:calc(100vh - 48px);overflow-y:auto;background:var(--bg-elev);border:1px solid var(--line);border-radius:8px;transform:scale(.94);transition:transform .35s var(--ease)}
+.modal.open .modal-box{transform:scale(1)}
+.modal-video{position:relative;overflow:hidden;background:var(--bg-elev);aspect-ratio:16/9;height:min(58vh,440px);width:auto;margin:0 auto;display:flex;align-items:center;justify-content:center}
+.modal-video img,.modal-video video,.modal-video iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.modal-box.vertical{max-width:340px}
+.modal-box.vertical .modal-video{aspect-ratio:9/16;height:min(58vh,520px)}
+.modal-video .play-btn{width:56px;height:56px}
+.modal-video .play-btn::before{border-left-width:16px;border-top-width:10px;border-bottom-width:10px}
+.modal-note{position:absolute;bottom:14px;left:14px;font-size:11px;color:var(--grey);background:rgba(5,7,13,0.6);padding:5px 10px;border-radius:20px}
+.modal-body{padding:22px 26px 26px;width:100%}
+.modal-body .cat{color:var(--blue-light);font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase}
+.modal-body h3{font-size:22px;margin:10px 0}
+.modal-body p{color:var(--grey);font-size:14.5px}
+.modal-close{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:50%;background:rgba(5,7,13,0.85);border:1px solid rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;z-index:10;font-size:18px;box-shadow:0 4px 14px rgba(0,0,0,0.4)}
+.modal-close:hover{border-color:var(--blue-light);background:rgba(5,7,13,0.95)}
+
+/* ============ SERVICES ============ */
+.services{background:var(--bg-elev);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.service-card{background:var(--bg-elev);padding:40px 34px;transition:background .35s var(--ease)}
+.service-card:hover{background:#0d1226}
+.service-num{font-family:var(--disp);font-size:13px;color:var(--blue-light);margin-bottom:22px;letter-spacing:0.05em}
+.service-icon{margin-bottom:24px;width:34px;height:34px;color:var(--blue-light)}
+.service-card h3{font-size:19px;margin-bottom:12px}
+.service-card p{color:var(--grey);font-size:14.5px}
+
+/* ============ TOOLS TICKER ============ */
+.tools{padding:90px 0;overflow:hidden}
+.tools .section-head{margin-bottom:44px}
+.ticker-wrap{width:100%;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker{display:flex;gap:16px;width:max-content;animation:ticker 26s linear infinite}
+.ticker-wrap:hover .ticker{animation-play-state:paused}
+.tool-badge{
+  display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:40px;
+  padding:14px 24px;white-space:nowrap;background:var(--bg-elev);
+}
+.tool-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.tool-badge span{font-size:14px;font-weight:500}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.about-num{font-family:var(--disp);font-size:4rem;font-weight:700;color:var(--blue-light);margin-bottom:6px}
+.about-num + p{font-size:12px;letter-spacing:0.1em;color:var(--grey);text-transform:uppercase;margin-bottom:34px}
+.about-copy p{color:var(--grey);font-size:16px;margin-bottom:18px;max-width:460px}
+.mini-timeline{display:flex;flex-direction:column;gap:0}
+.mt-step{
+  display:flex;gap:20px;padding:22px 0;border-top:1px solid var(--line);
+  opacity:0;transform:translateX(24px);transition:opacity .6s var(--ease),transform .6s var(--ease);
+}
+.mt-step.in-view{opacity:1;transform:translateX(0)}
+.mt-step:last-child{border-bottom:1px solid var(--line)}
+.mt-step .idx{font-family:var(--disp);color:var(--blue-light);font-size:15px;width:28px;flex-shrink:0}
+.mt-step h4{font-size:17px;margin-bottom:4px}
+.mt-step p{color:var(--grey);font-size:13.5px}
+
+/* ============ PROCESS ============ */
+.process{background:var(--bg-elev);border-top:1px solid var(--line)}
+.process-list{display:flex;flex-direction:column}
+.p-step{
+  display:grid;grid-template-columns:90px 1fr;gap:28px;padding:34px 0;border-top:1px solid var(--line);
+  opacity:0;transform:translateY(20px);transition:opacity .6s var(--ease),transform .6s var(--ease);
+}
+.p-step.in-view{opacity:1;transform:translateY(0)}
+.p-step:last-child{border-bottom:1px solid var(--line)}
+.p-step .idx{font-family:var(--disp);font-size:2.2rem;color:var(--navy);font-weight:700;-webkit-text-stroke:1px var(--blue-light);color:transparent}
+.p-step h4{font-size:20px;margin-bottom:8px}
+.p-step p{color:var(--grey);font-size:14.5px;max-width:520px}
+
+/* ============ TESTIMONIALS ============ */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testi-card{
+  background:var(--bg-elev);border:1px solid var(--line);border-radius:6px;padding:32px 28px;
+  transition:transform .4s var(--ease),border-color .4s var(--ease);
+}
+.testi-card:hover{transform:translateY(-6px);border-color:var(--blue-light)}
+.testi-mark{color:var(--blue-light);font-family:var(--disp);font-size:28px;margin-bottom:14px}
+.testi-card p.quote{color:var(--grey);font-size:14.5px;margin-bottom:26px}
+.testi-person{display:flex;align-items:center;gap:12px}
+.avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--navy));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600}
+.testi-person .name{font-size:14px;font-weight:600}
+.testi-person .biz{font-size:12px;color:var(--grey)}
+.testi-flag{margin-top:36px;font-size:11.5px;color:var(--grey-dim)}
+
+/* ============ CTA ============ */
+.cta-section{
+  position:relative;overflow:hidden;padding:130px 0;text-align:center;
+  background:radial-gradient(50% 60% at 50% 100%, rgba(10,61,255,0.22), transparent 70%), var(--bg);
+  border-top:1px solid var(--line);
+}
+.cta-blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:0.35;pointer-events:none}
+.cta-blob.b1{width:340px;height:340px;background:var(--blue);top:-120px;left:-80px;animation:driftA 14s ease-in-out infinite}
+.cta-blob.b2{width:260px;height:260px;background:var(--navy);bottom:-100px;right:-60px;animation:driftB 16s ease-in-out infinite}
+@keyframes driftA{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,40px)}}
+@keyframes driftB{0%,100%{transform:translate(0,0)}50%{transform:translate(-50px,-30px)}}
+.cta-section h2{font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;margin-bottom:20px;position:relative}
+.cta-section > .container > p{color:var(--grey);max-width:480px;margin:0 auto 40px;font-size:16px;position:relative}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.contact-form{display:flex;flex-direction:column;gap:20px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-size:12px;letter-spacing:0.06em;color:var(--grey);text-transform:uppercase}
+.field input,.field select,.field textarea{
+  background:transparent;border:none;border-bottom:1px solid var(--line);color:var(--white);
+  padding:10px 2px;font-size:15px;font-family:inherit;transition:border-color .3s;
+}
+.field select option{background:var(--bg-elev)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue-light)}
+.field textarea{resize:vertical;min-height:90px}
+.form-status{font-size:13px;color:var(--blue-light);min-height:18px}
+.contact-side{display:flex;flex-direction:column;gap:36px}
+.contact-block h4{font-size:12px;letter-spacing:0.1em;color:var(--grey);text-transform:uppercase;margin-bottom:12px}
+.whatsapp-link{
+  display:inline-flex;align-items:center;gap:12px;font-family:var(--disp);font-size:1.6rem;color:var(--white);
+  border-bottom:1px solid var(--line);padding-bottom:10px;transition:color .3s,border-color .3s;
+}
+.whatsapp-link:hover{color:var(--blue-light);border-color:var(--blue-light)}
+.social-list{display:flex;gap:14px;flex-wrap:wrap}
+.social-list a{
+  border:1px solid var(--line);border-radius:30px;padding:9px 18px;font-size:13px;color:var(--grey);
+  transition:all .3s;
+}
+.social-list a:hover{color:var(--white);border-color:var(--blue-light)}
+
+/* ============ FOOTER ============ */
+.site-footer{border-top:1px solid var(--line);padding:60px 0 30px}
+.footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:40px;margin-bottom:50px}
+.footer-brand h3{font-size:20px;margin-bottom:8px}
+.footer-brand p{color:var(--grey);font-size:13.5px}
+.footer-nav{display:flex;gap:28px;flex-wrap:wrap}
+.footer-nav a{font-size:13px;color:var(--grey);letter-spacing:0.04em}
+.footer-nav a:hover{color:var(--white)}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;border-top:1px solid var(--line);padding-top:26px;font-size:12.5px;color:var(--grey-dim)}
+.footer-bottom .social-list a{padding:6px 14px;font-size:12px}
+
+/* ============ REVEAL ============ */
+[data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+[data-reveal].in-view{opacity:1;transform:translateY(0)}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1024px){
+  .main-nav{display:none}
+  .header-cta .btn-primary{display:none}
+  .hamburger{display:flex}
+  .hero-grid{grid-template-columns:1fr;gap:60px}
+  .hero-visual{height:420px;order:-1}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr;gap:50px}
+  .contact-grid{grid-template-columns:1fr;gap:50px}
+  .testi-grid{grid-template-columns:1fr;gap:20px}
+}
+@media (max-width:680px){
+  .container{padding:0 20px}
+  .section-pad{padding:90px 0}
+  .hero{padding:130px 0 60px}
+  .hero-visual{height:340px}
+  .project-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .filters{gap:8px}
+  .filter-btn{padding:8px 16px;font-size:11.5px}
+  .p-step{grid-template-columns:50px 1fr}
+  .p-step .idx{font-size:1.5rem}
+  .footer-top{flex-direction:column}
+  .art-shape,.type-sample,.sel-box{display:none}
+  .hero-visual .shape-a,.hero-visual .crop-tl{display:block}
+  .canvas-frame{inset:20px 4px 40px 20px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;scroll-behavior:auto !important}
+}
+</style>
+</head>
 <body>
-<nav class="nav" id="nav" aria-label="Main"><div class="ni">
-<a href="#home" class="brand" aria-label="Al Furqan Online Academy home"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#064B3B"/><path d="M20 10c-3-2-7-2-10-1v19c3-1 7-1 10 1 3-2 7-2 10-1V9c-3-1-7-1-10 1z" fill="none" stroke="#F5B900" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 10v19" stroke="#F5B900" stroke-width="1.8"/></svg><span>AL FURQAN <i>ONLINE ACADEMY</i></span></a>
-<div class="menu" id="menu"><a href="#home">Home</a><a href="#about">About</a><a href="#courses">Courses</a><a href="#programs">Programs</a><a href="#how">How It Works</a><a href="#faq">FAQ</a></div>
-<div class="nr"><a href="#register" class="btn b-g">Register Now <svg class="ic" viewBox="0 0 24 24" data-ic="arrow"></svg></a><button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
-</div></nav>
+<a href="#main" class="skip-link">Skip to content</a>
 
-<header class="hero" id="home">
-<div class="hbg ph" data-img="hero" data-alt="A student reading the Qur’an during an online lesson" data-eager></div><div class="ov"></div>
-<div class="top"><div class="wrap"><span><a href="tel:+2349122068094"><svg class="ic" viewBox="0 0 24 24" data-ic="phone"></svg>+234 9122068094</a><a class="em" href="mailto:hassanmustaqeem001@gmail.com"><svg class="ic" viewBox="0 0 24 24" data-ic="mail"></svg>hassanmustaqeem001@gmail.com</a></span><a class="wa-c" data-wa aria-label="Chat on WhatsApp"><svg class="ic" viewBox="0 0 24 24" data-ic="chat"></svg></a></div></div>
-<div class="wrap"><div class="hc">
-<span class="badge"><svg class="ic" viewBox="0 0 24 24" data-ic="star"></svg>FREE 1-MONTH QURAN CLASS <i>· Starting 10 October 2026</i></span>
-<span class="ars" lang="ar" dir="rtl">وَقُلْ رَبِّ زِدْنِي عِلْمًا</span>
-<h1>Learn the Qur’an,<br>Read with Purpose,<br><span class="hl">Grow with Faith.</span></h1>
-<p class="lead">Learn the Qur’an from the comfort of your home through guided Quran reading, Tajweed, memorisation and Islamic learning.</p>
-<div class="cta-row"><a href="#register" class="btn b-y">Reserve Free Spot <svg class="ic" viewBox="0 0 24 24" data-ic="arrow"></svg></a><a href="#programs" class="btn b-out">View Programs <svg class="ic" viewBox="0 0 24 24" data-ic="arrow"></svg></a></div>
-</div></div>
-<div class="strip ovl" id="hstrip"></div>
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo">AL BARKA<span>GRAPHICS</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#contact" class="btn btn-primary">Start a Project</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
 </header>
 
-<main>
-<section id="about" class="after"><div class="wrap ab">
-<div><span class="lbl">About Al Furqan</span><h2>Building a Stronger Connection With the <span class="hl">Qur’an</span></h2>
-<p>Al Furqan Online Academy is an online Quran learning platform designed to make Quran education accessible from the comfort of home. Our lessons focus on helping students read, recite, memorise and learn essential Islamic teachings with consistency and understanding.</p>
-<div class="pts" id="pts"></div><a href="#how" class="btn b-g">Read More About Us <svg class="ic" viewBox="0 0 24 24" data-ic="arrow"></svg></a></div>
-<div class="ph" data-img="about" data-alt="Qur’an resting on a wooden rehal in warm light"></div>
-</div></section>
-
-<section class="pale why"><div class="wrap">
-<div class="head"><span class="lbl">Why choose us?</span><h2>A Better Way to Learn the <span class="hl">Qur’an</span></h2></div>
-<div class="wy" id="wy"></div></div>
-<div class="strip ovl" id="vstrip"></div></section>
-
-<section id="courses" class="after"><div class="wrap">
-<div class="head"><span class="lbl">Our courses</span><h2>Courses We <span class="hl">Offer</span></h2></div>
-<div class="cg" id="cg"></div></div></section>
-
-<section id="programs" class="after"><div class="wrap">
-<div class="head"><span class="lbl">Programs</span><h2>Choose Your Quran Learning <span class="hl">Path</span></h2><p>Start with our free introductory class, continue with structured group learning, or choose personalised one-to-one guidance.</p></div>
-<div class="pg" id="pg"></div>
-</div></section>
-
-<section class="pale"><div class="wrap"><div class="fcta-b">
-<span class="fbadge">LIMITED SPOTS</span>
-<h2>Start With One Free Month</h2>
-<p>Experience live Quran learning, practise with guidance and build your foundation before deciding whether to continue.</p>
-<div class="fdet" id="fdet"></div>
-<a href="#register" class="btn b-y">Reserve My Free Spot <svg class="ic" viewBox="0 0 24 24" data-ic="arrow"></svg></a>
-</div></div></section>
-
-<section class="pale qs" id="quran"><div class="wrap">
-<div class="head"><span class="lbl">Interactive Qur’an</span><h2>Open the <span class="hl">Qur’an</span></h2><p>Take a moment to explore the pages of the Qur’an and begin your journey of learning.</p></div>
-<div class="wood"><div class="stage"><div class="book" id="book" tabindex="0" role="group" aria-roledescription="page-turning Qur’an" aria-label="Interactive Qur’an. Use left and right arrow keys, swipe, or the buttons to turn pages."></div></div></div>
-<div class="ctl"><button id="nextP" aria-label="Turn to next page"><svg class="ic" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><span id="pgInfo" aria-live="polite">Pages 1–2</span><button id="prevP" aria-label="Turn to previous page"><svg class="ic" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button></div>
-</div></section>
-
-<section><div class="wrap wac">
-<div class="wact"><span class="lbl">WhatsApp Group</span><h2>Your Learning <span class="hl">Companion</span></h2>
-<ul id="wacList"></ul>
-<a data-group href="#" target="_blank" rel="noopener" class="btn b-g">Join WhatsApp Group <svg class="ic" viewBox="0 0 24 24" data-ic="chat"></svg></a>
-</div></div></section>
-
-<section id="how"><div class="wrap"><div class="hw">
-<div class="head"><span class="lbl" style="color:var(--gold)">How it works</span><h2>Start Your Quran Learning Journey in <span style="color:var(--gold)">4 Simple Steps</span></h2></div>
-<div class="sg sg4" id="sg"></div></div></div></section>
-
-<section class="verse"><div class="wrap">
-<p class="ar" lang="ar" dir="rtl">إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ</p>
-<blockquote>“Indeed, We have sent down the Reminder, and indeed We will preserve it.”</blockquote>
-<p>— Qur’an 15:9</p></div></section>
-
-<section id="register" class="pale"><div class="wrap">
-<div class="head"><span class="lbl">Registration</span><h2>Reserve Your Free Class <span class="hl">Spot</span></h2><p>Take the first step toward learning the Qur’an from the comfort of your home.</p></div>
-<p class="spots"><svg class="ic" viewBox="0 0 24 24" data-ic="star"></svg>Free class places are limited. Registration is required.</p>
-<div class="fb" id="formbox">
-
-<form id="reg" action="https://formspree.io/f/xbglgave" method="POST" novalidate>
-<input type="hidden" name="_subject" value="New Al Furqan Online Academy Registration">
-<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
-<div class="fgd">
-<div><label for="name">Full Name *</label><input id="name" name="name" required autocomplete="name"></div>
-<div><label for="age">Age *</label><input id="age" name="age" type="number" min="3" max="99" inputmode="numeric" required></div>
-<div><label for="country">Country *</label><input id="country" name="country" required autocomplete="country-name"></div>
-<div><label for="whatsapp">WhatsApp Number *</label><input id="whatsapp" name="whatsapp" type="tel" required autocomplete="tel" placeholder="+234…"></div>
-<div><label for="email">Email Address *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
-<div><label for="course">Course / Learning Interest *</label><select id="course" name="course" required><option value="">Select a course</option></select></div>
-<div><label for="level">Current Quran Level *</label><select id="level" name="level" required><option value="">Select your level</option><option>Beginner</option><option>Can Read Quran</option><option>Intermediate</option><option>Advanced</option></select></div>
-<div class="full"><label for="message">Additional Message</label><textarea id="message" name="message"></textarea></div>
-<div class="full"><label class="chk"><input type="checkbox" name="consent" value="yes" required><span>I agree to be contacted by Al Furqan Online Academy regarding my registration.</span></label></div>
-<div class="full"><button class="btn b-g" type="submit">Complete Registration</button></div>
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Mobile">
+    <a href="#home" class="mm-link">Home</a>
+    <a href="#work" class="mm-link">Work</a>
+    <a href="#services" class="mm-link">Services</a>
+    <a href="#about" class="mm-link">About</a>
+    <a href="#contact" class="mm-link">Contact</a>
+  </nav>
+  <div class="mm-cta">
+    <a href="#contact" class="btn btn-primary mm-link">Start a Project</a>
+    <a href="https://wa.me/2349067609008" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Me</a>
+  </div>
 </div>
-<div id="ferr" class="err" role="alert" hidden></div>
-</form></div></div></section>
 
-<section id="faq"><div class="wrap">
-<div class="head"><span class="lbl">FAQ</span><h2>Frequently Asked <span class="hl">Questions</span></h2></div>
-<div class="faq" id="faqList"></div></div></section>
+<main id="main">
 
-<div class="cta"><div class="wrap"><div class="l"><span class="ci"><svg class="ic" viewBox="0 0 24 24" data-ic="book"></svg></span><div><h2>Ready to Read, Recite &amp; Rise?</h2><p>Begin your Quran learning journey from the comfort of your home.</p></div></div>
-<div class="cta-row"><a href="#register" class="btn b-g">Register Now</a><a href="#courses" class="btn b-o" style="border-color:#1a1400;color:#1a1400">Our Courses</a></div></div></div>
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Al Barka Graphics — Creative Studio</span>
+      <h1>I turn ideas into <em>visual</em> experiences.</h1>
+      <p class="hero-desc">Graphic designer and video editor with 4 years of experience creating visuals that capture attention, communicate ideas and build brands.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Start a Project</a>
+      </div>
+      <div class="hero-stat">
+        <span class="num">4+</span>
+        <span class="label">Years<br>Experience</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual" aria-hidden="true">
+      <div class="art-shape shape-a"></div>
+      <div class="art-shape shape-b"></div>
+      <div class="art-shape shape-c"></div>
+      <div class="type-sample">Aa<span>Bb</span></div>
+      <div class="swatches">
+        <span class="swatch" style="background:#0A3DFF"></span>
+        <span class="swatch" style="background:#5B8CFF"></span>
+        <span class="swatch" style="background:#A7ADBA"></span>
+        <span class="swatch" style="background:#FFFFFF"></span>
+      </div>
+      <div class="sel-box"></div>
+      <div class="crop crop-tl"></div>
+      <div class="crop br crop-br"></div>
+      <div class="cursor-dot"></div>
+
+      <div class="canvas-frame" data-depth="0.4">
+        <div class="canvas-header">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="fname">project_final_v3.aeproj</span>
+        </div>
+        <div class="canvas-body"></div>
+        <div class="timeline-panel">
+          <div class="tl-top">
+            <div class="play-btn" role="img" aria-label="Play"></div>
+            <div class="waveform" id="waveform"></div>
+          </div>
+          <div class="tl-track">
+            <span class="clip clip1"></span>
+            <span class="clip clip2"></span>
+            <span class="clip clip3"></span>
+            <span class="clip clip4"></span>
+            <span class="playhead"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="work section-pad" id="work">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Selected Work</span>
+      <h2>Selected Work</h2>
+      <p>Designs, edits and visual experiences created to make brands stand out.</p>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+      <button class="filter-btn" data-filter="video-editing">Video Editing</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="social-media">Social Media</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid"></div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close project">&times;</button>
+    <div class="modal-video" id="modalVideo">
+      <div class="play-btn" role="img" aria-label="Play preview"></div>
+      <span class="modal-note">Video preview placeholder — replace with your showreel (muted, no autoplay)</span>
+    </div>
+    <div class="modal-body">
+      <span class="cat" id="modalCat">Category</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDesc">Project description.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services section-pad" id="services">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">What I Do</span>
+      <h2>What I Do</h2>
+      <p>Creative services that combine design and motion to help brands communicate clearly.</p>
+    </div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card" data-reveal>
+      <div class="service-num">01</div>
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l4-4 4 4 6-6 4 4"/></svg>
+      <h3>Graphic Design</h3>
+      <p>Brand visuals, promotional designs, social media graphics, flyers and marketing materials.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-num">02</div>
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="14" height="12" rx="1.5"/><path d="M17 10l4-2.5v9L17 14"/></svg>
+      <h3>Video Editing</h3>
+      <p>Promotional videos, social media videos, advertisements, reels and branded content.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-num">03</div>
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8.5"/><path d="M12 6v6l4 2"/></svg>
+      <h3>Brand Identity</h3>
+      <p>Visual systems that help businesses create a recognizable and consistent brand.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-num">04</div>
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg>
+      <h3>Social Media Design</h3>
+      <p>Scroll-stopping graphics designed specifically for digital platforms.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-num">05</div>
+      <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18l5-11 4 8 3-5 4 8"/></svg>
+      <h3>Motion Graphics</h3>
+      <p>Animated visuals that bring brands and ideas to life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section class="tools">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Tools</span>
+      <h2>Tools I Use</h2>
+    </div>
+  </div>
+  <div class="ticker-wrap">
+    <div class="ticker" id="toolsTicker"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section-pad" id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="about-num">4</div>
+      <p>Years of Creative Experience</p>
+      <div class="about-copy">
+        <p>Al Barka Graphics combines graphic design and video editing to help businesses communicate visually and attract attention. Over 4 years, that has meant brand visuals, social content and promotional videos built to hold a viewer's focus for more than a second.</p>
+        <p>Every project moves through the same rhythm: design, edit, refine, deliver.</p>
+      </div>
+    </div>
+    <div class="mini-timeline" id="miniTimeline">
+      <div class="mt-step" data-reveal><span class="idx">01</span><div><h4>Design</h4><p>Build the visual concept and layout.</p></div></div>
+      <div class="mt-step" data-reveal><span class="idx">02</span><div><h4>Edit</h4><p>Cut, grade and assemble the motion piece.</p></div></div>
+      <div class="mt-step" data-reveal><span class="idx">03</span><div><h4>Refine</h4><p>Tighten details until it feels finished.</p></div></div>
+      <div class="mt-step" data-reveal><span class="idx">04</span><div><h4>Deliver</h4><p>Hand off files ready to publish.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process section-pad">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Process</span>
+      <h2>How I Bring Ideas to Life</h2>
+    </div>
+    <div class="process-list">
+      <div class="p-step"><span class="idx">01</span><div><h4>Discover</h4><p>Understand the brand, audience and goal.</p></div></div>
+      <div class="p-step"><span class="idx">02</span><div><h4>Concept</h4><p>Develop the visual direction and creative idea.</p></div></div>
+      <div class="p-step"><span class="idx">03</span><div><h4>Design &amp; Edit</h4><p>Create the graphics, motion and video.</p></div></div>
+      <div class="p-step"><span class="idx">04</span><div><h4>Refine</h4><p>Polish the details and improve the final result.</p></div></div>
+      <div class="p-step"><span class="idx">05</span><div><h4>Deliver</h4><p>Provide a finished visual ready to use.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section-pad" id="testimonials">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">Testimonials</span>
+      <h2>Client Feedback</h2>
+    </div>
+    <div class="testi-grid" id="testiGrid"></div>
+    <p class="testi-flag">Placeholder testimonials shown for layout — replace with real client feedback.</p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-section">
+  <div class="cta-blob b1"></div>
+  <div class="cta-blob b2"></div>
+  <div class="container">
+    <h2>Have an idea? Let's make it visual.</h2>
+    <p>Have a brand, campaign or video that needs a creative touch? Let's bring it to life.</p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn btn-primary">Start a Project</a>
+      <a href="https://wa.me/2349067609008" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section-pad" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <div class="section-head" data-reveal style="margin-bottom:40px">
+        <span class="section-tag">Contact</span>
+        <h2>Let's Create Something Great.</h2>
+      </div>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnpqwlvj" method="POST">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="cf-type">Project Type</label>
+          <select id="cf-type" name="projectType">
+            <option>Graphic Design</option>
+            <option>Video Editing</option>
+            <option>Branding</option>
+            <option>Social Media</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" required></textarea>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;margin-top:6px">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <span class="form-status" id="formStatus"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-side">
+      <div class="contact-block">
+        <h4>WhatsApp</h4>
+        <a href="https://wa.me/2349067609008" target="_blank" rel="noopener" class="whatsapp-link">
+          09067609008
+        </a>
+      </div>
+      <div class="contact-block">
+        <h4>Follow</h4>
+        <div class="social-list">
+          <a href="https://www.instagram.com/bnis.mail04?stkn=MXFmZjMwOTdmbGhuNA==" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/share/1CKTWPee2S/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@bn_ismail04?_r=1&_t=ZS-99bFVjg1T5o" target="_blank" rel="noopener">TikTok</a>
+          <a href="#" target="_blank" rel="noopener">Behance</a>
+          <a href="#" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
-<footer><div class="wrap"><div class="f4">
-<div><a href="#home" class="brand">AL FURQAN&nbsp;<i>ONLINE ACADEMY</i></a><p>Online Quran learning through reading, Tajweed, memorisation, basic Islamic duas and Hadith.</p><p class="fa" lang="ar" dir="rtl">أكاديمية القرآن عبر الإنترنت</p><p style="margin-top:8px;letter-spacing:.14em;color:var(--gold)">READ • RECITE • RISE</p></div>
-<div><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#courses">Courses</a></li><li><a href="#how">How It Works</a></li><li><a href="#faq">FAQ</a></li><li><a href="#register">Register</a></li></ul></div>
-<div><h4>Courses</h4><ul id="fcourses"></ul></div>
-<div><h4>Contact</h4><ul><li><a data-wa href="#">WhatsApp: +234 9122068094</a></li><li><a href="mailto:hassanmustaqeem001@gmail.com">hassanmustaqeem001@gmail.com</a></li></ul></div>
-</div><p class="copy">© 2026 Al Furqan Online Academy. All rights reserved.</p></div></footer>
-
-<nav class="bn" aria-label="Quick navigation">
-<a href="#home"><svg class="ic" viewBox="0 0 24 24" data-ic="home"></svg>Home</a><a href="#courses"><svg class="ic" viewBox="0 0 24 24" data-ic="book"></svg>Courses</a>
-<a href="#register" class="c"><span><svg class="ic" viewBox="0 0 24 24" data-ic="form"></svg></span>Register</a>
-<a href="#about"><svg class="ic" viewBox="0 0 24 24" data-ic="user"></svg>About</a><a data-wa href="#"><svg class="ic" viewBox="0 0 24 24" data-ic="chat"></svg>WhatsApp</a></nav>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Al Barka Graphics</h3>
+        <p>Graphic Designer &amp; Video Editor</p>
+        <p>4 Years of Creative Experience</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Al Barka Graphics. All rights reserved.</span>
+      <div class="social-list">
+        <a href="https://wa.me/2349067609008" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Behance</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script>
-/* ============ CONFIGURATION — edit here ============ */
-const ACADEMY_NAME="Al Furqan Online Academy", ARABIC_NAME="أكاديمية القرآن عبر الإنترنت", TAGLINE="READ • RECITE • RISE";
-const WHATSAPP_NUMBER="+234 9122068094", WHATSAPP_URL="https://wa.me/2349122068094";
-const ACADEMY_EMAIL="hassanmustaqeem001@gmail.com";   // also appears in two mailto: links and the top bar/footer text
-const WHATSAPP_GROUP_URL="YOUR_WHATSAPP_GROUP_LINK";
-/* Free class */
-const FREE_START_DATE="10 October 2026", FREE_DAYS="Friday, Saturday & Sunday", FREE_TIME="8:30–9:30 PM WAT", FREE_PLATFORM="Zoom";
-const PRICE_GROUP="₦20,000", PRICE_1TO1="₦50,000";
-const FORMSPREE_ENDPOINT="https://formspree.io/f/xbglgave";
-/* Quran page-flip (pages live in assets/quran-pages/page-001.jpg …) */
-const TOTAL_QURAN_PAGES=8;      // number of scans (page-001.jpg…). The verse page and a blank page are added in front automatically
-const AUTO_FLIP_ENABLED=true;
-const AUTO_FLIP_DELAY=1000;    // ms rest between turns
-const AUTO_RESUME_DELAY=3000; // ms after a visitor lets go before auto-turning resumes
-const PAGE_FLIP_DURATION=1000; // ms per page turn
-const QURAN_PAGES_DIR="assets/quran-pages/";
-/* Photos — replace with your own files */
-const COURSE_LIST=["Quran Memorisation","Quran Reading with Tajweed","Basic Islamic Duas","Hadith"];
-const IMAGES={hero:"assets/images/hero.jpg",about:"assets/images/about.jpg",memorisation:"assets/images/course-memorisation.jpg",tajweed:"assets/images/course-tajweed.jpg",duas:"assets/images/course-duas.jpg",hadith:"assets/images/course-hadith.jpg"};
-/* Courses — exactly four */
-const COURSES=[
-{t:"Quran Memorisation",d:"Build consistency in memorising and revising the Qur’an through guided learning.",img:"memorisation",pos:"50% 15%"},
-{t:"Quran Reading with Tajweed",d:"Improve Quran reading, pronunciation and Tajweed through guided practice.",img:"tajweed",pos:"30% 35%"},
-{t:"Basic Islamic Duas",d:"Learn essential duas and supplications for everyday Muslim life.",img:"duas",pos:"50% 45%"},
-{t:"Hadith",d:"Explore selected teachings and guidance from the sayings of the Prophet ﷺ.",img:"hadith",pos:"50% 60%"}];
-/* ================================================== */
-const P={book:"M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z",laptop:"M3 5h18v11H3z M2 19h20",layers:"M12 3 3 8l9 5 9-5z M3 13l9 5 9-5",user:"M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M4 21a8 8 0 0 1 16 0",users:"M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M3 20a6 6 0 0 1 12 0 M17 11a3 3 0 1 0 0-6 M18 14a6 6 0 0 1 3 6",star:"M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.5 6.7 19.4l1.2-6L3.4 9.3l6-.7z",scroll:"M8 3h11v14a4 4 0 0 1-4 4H6a3 3 0 0 0 3-3V6a3 3 0 0 0-1-3z M5 3a2 2 0 0 0-2 2v2h5",chat:"M21 12a8 8 0 0 1-11.5 7L4 20l1.2-4.4A8 8 0 1 1 21 12z",arrow:"M5 12h14 M13 6l6 6-6 6",check:"M5 12l5 5 9-10",form:"M6 3h9l4 4v14H6z M9 12h7 M9 16h7",mic:"M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z M6 11a6 6 0 0 0 12 0 M12 17v4",home:"M3 11l9-8 9 8 M5 10v10h14V10",phone:"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z",mail:"M3 5h18v14H3z M3 6l9 7 9-7",trend:"M3 17l6-6 4 4 8-8 M15 7h6v6"};
-const ic=n=>`<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="${P[n]}"/></svg>`;
-const $=s=>document.querySelector(s);
-const imgTag=(k,alt,eager,pos)=>`<img src="${IMAGES[k]}" alt="${alt}" ${pos?`style="object-position:${pos}"`:""} ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async" onerror="this.remove()">`;
-document.querySelectorAll("[data-img]").forEach(e=>{const k=e.dataset.img;e.dataset.l="Add photo: "+IMAGES[k];e.innerHTML=imgTag(k,e.dataset.alt,"eager" in e.dataset)});
-document.querySelectorAll("[data-ic]").forEach(e=>e.innerHTML=`<path d="${P[e.dataset.ic]}"/>`);
-document.querySelectorAll("[data-wa]").forEach(a=>{a.href=WHATSAPP_URL;a.target="_blank";a.rel="noopener"});
-const groupOK=!WHATSAPP_GROUP_URL.startsWith("YOUR_");
-const wireGroup=()=>document.querySelectorAll("[data-group]").forEach(a=>{a.href=groupOK?WHATSAPP_GROUP_URL:"#register";if(!groupOK)a.removeAttribute("target")});
-const strip=a=>a.map(([i,t,d])=>`<div class="si"><span class="i">${ic(i)}</span><span><b>${t}</b><small>${d}</small></span></div>`).join("");
-$("#hstrip").innerHTML=strip([["book","Quran Memorisation","Guided memorising and revision"],["mic","Quran Reading & Tajweed","Clear recitation and pronunciation"],["star","Basic Islamic Duas","Everyday duas and supplications"],["scroll","Hadith","Selected teachings of the Prophet ﷺ"]]);
-$("#vstrip").innerHTML=strip([["book","Quran Focused","Learning centred around the Qur’an"],["laptop","Online Learning","Learn from the comfort of home"],["layers","4 Courses","Focused learning pathways"],["user","Personalised Support","Guidance throughout your learning journey"]]);
-$("#pts").innerHTML=["Quran-Focused Learning","Guided Practice","Personalised Learning","Supportive Environment"].map(t=>`<span><i>${ic("check")}</i>${t}</span>`).join("");
-$("#wy").innerHTML=[["book","Quran-Focused Learning","Lessons centred on reading, reciting and understanding the Qur’an."],["users","Guided Learning","Practise with a teacher guiding your reading and recitation."],["laptop","Flexible Online Access","Join your lessons online from wherever you are."],["user","Personalised Attention","Guidance that follows each student's current level."]].map(([i,t,d])=>`<div class="wc rv">${ic(i)}<h3>${t}</h3><p>${d}</p></div>`).join("");
-$("#course").innerHTML+=COURSE_LIST.map(c=>`<option>${c}</option>`).join("");
-$("#cg").innerHTML=COURSES.map(c=>`<a href="#register" class="cc rv" data-course="${c.t}"><div class="ph" data-l="Add photo: ${IMAGES[c.img]}">${imgTag(c.img,c.t+" course",false,c.pos)}</div><div class="b"><h3>${c.t}</h3><p>${c.d}</p><span class="mo">Learn More ${ic("arrow")}</span></div></a>`).join("");
-$("#fcourses").innerHTML=COURSES.map(c=>`<li><a href="#courses">${c.t}</a></li>`).join("");
-$("#sg").innerHTML=[["form","Reserve Your Free Spot","Complete the registration form."],["chat","Join WhatsApp","Receive confirmation and join the learning group."],["laptop","Attend Your Zoom Class","Join the live classes Friday, Saturday and Sunday."],["trend","Continue Your Journey","After the free month, choose the learning option that suits you."]].map(([i,t,d],n)=>`<div class="sc rv"><span class="n">${n+1}</span>${ic(i)}<div><h3>${t}</h3><p>${d}</p></div></div>`).join("");
-$("#fdet").innerHTML=[["form","Starts "+FREE_START_DATE],["users","Friday • Saturday • Sunday"],["laptop",FREE_TIME],["chat","Zoom"]].map(([i,t])=>`<span>${ic(i)}${t}</span>`).join("");
-$("#wacList").innerHTML=["Class reminders","Zoom information","Practice reminders","Learning resources","Important announcements","Guidance throughout the program"].map(t=>`<li>${ic("check")}${t}</li>`).join("");
-$("#pg").innerHTML=[
- {badge:"Start Here",t:"1-Month Free Quran Class",price:"₦0",per:"FREE FOR ONE MONTH",d:"Experience our Quran learning approach and build a strong foundation before continuing your learning journey.",f:["1 month of live Quran classes","Friday, Saturday & Sunday classes","8:30–9:30 PM WAT","Live classes via Zoom","Quran reading practice","Introduction to Tajweed","Guided correction","Access to the WhatsApp learning group","Beginner-friendly learning environment"],btn:"Reserve Free Spot",note:"Limited spots available • Starts "+FREE_START_DATE},
- {badge:"Most Popular",t:"Online Quran Class",price:PRICE_GROUP,per:"/ month",d:"Continue your Quran learning with structured live classes, regular practice and guided correction.",f:["Live online Quran classes","Quran Reading with Tajweed","Structured learning","Regular guided practice","Recitation correction","WhatsApp learning/support group","Zoom classes","Ongoing progress guidance","Access to the teacher during group classes"],btn:"Join the Online Class",note:"Fee: "+PRICE_GROUP+" per month",rec:true},
- {badge:"Personalised",t:"One-to-One Quran Class",price:PRICE_1TO1,per:"/ month",d:"Private Quran learning for students who want individual attention and direct access to the teacher.",f:["Private one-to-one classes","Individual attention","Personalised learning pace","Quran Reading with Tajweed","Direct access to the teacher during lessons","Individual recitation correction","Personal progress guidance","Zoom classes","Flexible learning support"],btn:"Choose One-to-One",note:PRICE_1TO1+" per month"}
-].map(p=>`<div class="pc${p.rec?" rec":""} rv">${p.rec?'<span class="pop">Most Popular</span>':""}<span class="pb"${p.rec?' style="visibility:hidden"':""}>${p.badge}</span><h3>${p.t}</h3><div class="pp"><b>${p.price}</b><small>${p.per}</small></div><p class="pd">${p.d}</p><a href="#register" class="btn ${p.rec?"b-y":"b-g"}">${p.btn}</a><ul class="pf">${p.f.map(x=>`<li>${ic("check")}${x}</li>`).join("")}</ul><p class="pn">${p.note}</p></div>`).join("");
-$("#faqList").innerHTML=[
-["Who can join the free Quran class?","The introductory class is designed for learners who want to improve their Quran reading and build a foundation in Tajweed. Beginners and students with some previous Quran-reading experience can join."],
-["When does the free class start?","The one-month free introductory class starts on 10 October 2026. Live classes are held on Friday, Saturday and Sunday at 8:30 PM WAT."],
-["Where will the classes be held?","Classes will be held live online through Zoom. Registered students will receive the relevant class information through the WhatsApp group."],
-["Is the one-month class really free?","Yes. The introductory program is free for one month. Spots are limited and registration is required."],
-["What happens after the free month?","After the introductory month, students who want to continue can join one of our paid learning options. The standard online group class is ₦20,000 per month, while the one-to-one option is ₦50,000 per month."],
-["Can I choose my preferred class time?","No. Class times are fixed by the teacher. The current live class schedule is Friday, Saturday and Sunday at 8:30 PM WAT."],
-["What will I learn during the free month?","Students will work on Quran reading, pronunciation, foundational Tajweed rules, guided recitation practice, correction and revision. The aim is to give students a useful foundation for continued Quran learning."],
-["How do I register?","Complete the registration form on this website. After submitting your details, you will receive a confirmation and be directed to join the academy's WhatsApp group for further class information."]
-].map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join("");
-wireGroup();
-const nav=$("#nav"),menu=$("#menu"),burger=$("#burger");
-addEventListener("scroll",()=>nav.classList.toggle("is-scrolled",scrollY>30),{passive:true});
-burger.onclick=()=>{const o=menu.classList.toggle("open");burger.setAttribute("aria-expanded",o);burger.setAttribute("aria-label",o?"Close menu":"Open menu")};
-menu.addEventListener("click",e=>{if(e.target.closest("a")){menu.classList.remove("open");burger.setAttribute("aria-expanded","false")}});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+/* =========================================================
+   EDITABLE CONTENT — change brand info, projects, services,
+   tools and testimonials here.
+========================================================= */
+const CONFIG = {
+  whatsappLink: "https://wa.me/2349067609008",
+  /*
+    PROJECT FIELDS
+    - image: path to a thumbnail (jpg/png/webp). Put your files in an
+      "assets/work/" folder next to this HTML file and reference them
+      like "assets/work/brand-identity.jpg". Leave empty ("") to keep
+      the placeholder gradient.
+    - video: only for isVideo:true projects. Path to an mp4 file, e.g.
+      "assets/work/promo.mp4". Leave empty ("") to keep the "replace
+      with your showreel" placeholder in the modal. Plays with controls,
+      muted off by default, no autoplay — the visitor presses play.
+    - color: only used as a fallback background when no image is set.
+  */
+  projects: [
+    { title:"Anthony Footwear Covering — Product Flyer", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A bold product flyer for a handmade footwear brand, built around a full grid of sandals, loafers and accessories.", isVideo:false, image:"assets/work/1.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#071A5C)" },
+    { title:"Lorlly MultimediaTV — Services Flyer", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A full services breakdown for a videography brand, covering everything from event coverage to brand growth.", isVideo:false, image:"assets/work/2.jpg", video:"", color:"linear-gradient(135deg,#071A5C,#0A3DFF)" },
+    { title:"Timeless — Album Cover Art", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A surreal, cinematic album cover concept blending a silhouette landscape with a starlit sky.", isVideo:false, image:"assets/work/3.jpg", video:"", color:"linear-gradient(135deg,#05070D,#0A3DFF)" },
+    { title:"Sales Hack Conference — Event Promo", category:"social-media", categoryLabel:"Social Media", desc:"A comment-bait engagement post promoting an upcoming sales conference, paired with full event details.", isVideo:false, image:"assets/work/4.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#5B8CFF)" },
+    { title:"Swiss Dreadlock — Services Flyer", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A services flyer for a dreadlock salon, laying out every offer alongside real client transformation photos.", isVideo:false, image:"assets/work/5.jpg", video:"", color:"linear-gradient(135deg,#071A5C,#05070D)" },
+    { title:"Chemistry & Physics Bootcamp — Flyer", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A JAMB prep bootcamp flyer covering the schedule, pricing and duration in one clear layout.", isVideo:false, image:"assets/work/6.jpg", video:"", color:"linear-gradient(135deg,#5B8CFF,#0A3DFF)" },
+    { title:"CPN — Welcome to July", category:"social-media", categoryLabel:"Social Media", desc:"A personal-brand monthly greeting post built around bold typography and a confident portrait.", isVideo:false, image:"assets/work/7.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#071A5C)" },
+    { title:"Sales Hack Conference — Welcome to July", category:"social-media", categoryLabel:"Social Media", desc:"A high-energy monthly greeting post with falling cash and coins to match the brand's money-forward tone.", isVideo:false, image:"assets/work/8.jpg", video:"", color:"linear-gradient(135deg,#071A5C,#0A3DFF)" },
+    { title:"Affiliate Marketing — Course Flyer", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A sales flyer for a digital course, built to highlight the offer, price drop and what's included.", isVideo:false, image:"assets/work/9.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#5B8CFF)" },
+    { title:"Sales Hack Conference — Welcome to June", category:"social-media", categoryLabel:"Social Media", desc:"A monthly greeting post for a sales conference brand, pairing bold 3D type with a confident brand photo.", isVideo:false, image:"assets/work/10.jpg", video:"", color:"linear-gradient(135deg,#5B8CFF,#0A3DFF)" },
+    { title:"Consecration — Event Flyer", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A five-speaker event flyer for a church program, built to spotlight every guest speaker at a glance.", isVideo:false, image:"assets/work/11.jpg", video:"", color:"linear-gradient(135deg,#071A5C,#05070D)" },
+    { title:"Swiss Dreadlock Salon — Logo Design", category:"branding", categoryLabel:"Branding", desc:"A hand-drawn mascot mark paired with a custom wordmark for a dreadlock and grooming salon.", isVideo:false, image:"assets/work/12.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#5B8CFF)" },
+    { title:"Dent — Brand Identity", category:"branding", categoryLabel:"Branding", desc:"A logo system for a wealth-building brand, delivered in light and dark versions for flexible use.", isVideo:false, image:"assets/work/13.jpg", video:"", color:"linear-gradient(135deg,#071A5C,#0A3DFF)" },
+    { title:"Gloss & Glow — Logo Design", category:"branding", categoryLabel:"Branding", desc:"A playful, high-shine logo for a beauty brand, built around a lipstick-and-lips mark.", isVideo:false, image:"assets/work/14.jpg", video:"", color:"linear-gradient(135deg,#05070D,#071A5C)" },
+    { title:"Success Academy — Brand Identity", category:"branding", categoryLabel:"Branding", desc:"A monogram logo for a leadership and financial-freedom academy, designed to feel established and confident.", isVideo:false, image:"assets/work/15.jpg", video:"", color:"linear-gradient(135deg,#0A3DFF,#071A5C)" },
+    { title:"Swiss Dreadlock — Business Card & Promo", category:"graphic-design", categoryLabel:"Graphic Design", desc:"A two-part promo set pairing a salon cover banner with a contact card showcasing recent client styles.", isVideo:false, image:"assets/work/16.jpg", video:"", color:"linear-gradient(135deg,#5B8CFF,#071A5C)" },
+    /* TEMP TITLES — waiting on one line from you per video to replace these */
+    { title:"AI Ad Class — Registration Promo", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated ad promoting a class that teaches business owners how to create AI ads to advertise their business.", isVideo:true, image:"", video:"", youtubeId:"ehY-uONhhwo", vertical:true, color:"linear-gradient(135deg,#0A3DFF,#071A5C)" },
+    { title:"Inside the Body — Neuron Explainer", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated explainer walking through how neurons work in the body, visualized alongside the brain, heart and other organs.", isVideo:true, image:"", video:"", youtubeId:"US_kHt1YAuQ", vertical:true, color:"linear-gradient(135deg,#5B8CFF,#0A3DFF)" },
+    { title:"Dropshipping Webinar — Promo Ad", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated ad promoting a webinar class that teaches dropshipping.", isVideo:true, image:"", video:"", youtubeId:"jMr5EHSjJ-U", vertical:true, color:"linear-gradient(135deg,#071A5C,#05070D)" },
+    { title:"Noise-Cancelling Blender — Product Ad", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated product ad for a noise-cancelling blender.", isVideo:true, image:"", video:"", youtubeId:"3OS43Yapl2I", vertical:true, color:"linear-gradient(135deg,#0A3DFF,#5B8CFF)" },
+    { title:"DataWallet — Brand Ad", category:"video-editing", categoryLabel:"Video Editing", desc:"An AI-generated brand ad for DataWallet, a data company.", isVideo:true, image:"", video:"", youtubeId:"HmyaYsPvNTA", vertical:true, color:"linear-gradient(135deg,#071A5C,#0A3DFF)" },
+  ],
+  tools: ["Adobe Photoshop","Adobe Illustrator","Adobe Premiere Pro","Adobe After Effects","Canva","CapCut","Figma"],
+  testimonials: [
+    { quote:"The visuals came out sharper than we expected, and the turnaround was fast.", name:"Client Name", biz:"Business Name", initials:"CN" },
+    { quote:"Our social pages finally look consistent and professional across every post.", name:"Client Name", biz:"Business Name", initials:"CN" },
+    { quote:"The promo video captured exactly what we wanted to say about our brand.", name:"Client Name", biz:"Business Name", initials:"CN" },
+  ]
+};
 
-/* ============ Interactive Qur’an (right-to-left page flip) ============ */
-(()=>{
-const book=$("#book"),reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
-const SC=Math.max(2,TOTAL_QURAN_PAGES),P_=SC+2,L=Math.floor(P_/2)+1;
-const face=(n,back)=>{
- if(n<1||n>P_)return `<div class="face${back?" bk":""}"><i></i></div>`;
- if(n===1)return `<div class="face vp${back?" bk":""}"><p class="va" lang="ar" dir="rtl">إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ<br>وَإِنَّا لَهُ لَحَافِظُونَ</p><b class="dv"></b><p class="ve">“Indeed, We have sent down the Reminder, and indeed We will preserve it.”</p><p class="vr">Qur’an 15:9</p><i></i></div>`;
- if(n===2||n-2>SC)return `<div class="face${back?" bk":""}"><i></i></div>`;
- const q=n-2,f=String(q).padStart(3,"0"),eager=q<=6?"":'loading="lazy"';
- return `<div class="face${back?" bk":""}"><img src="${QURAN_PAGES_DIR}page-${f}.jpg" alt="Qur’an page ${q}" ${eager} decoding="async" onerror="this.remove();this.parentNode.classList.add('m')"><div class="miss">Page ${q}<br>Add ${QURAN_PAGES_DIR}page-${f}.jpg</div><i></i></div>`};
-book.innerHTML=Array.from({length:L},(_,k)=>`<div class="leaf">${face(2*k,false)}${face(2*k+1,true)}</div>`).join("");
-const leaves=[...book.children];let k=1,busy=false,dragging=false,auto=0,tAuto,tRes,visible=false;
-const p=new Array(L).fill(0);
-const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
-function set(i,v){p[i]=v;const l=leaves[i],a=180*v;l.style.transform=`rotateY(${a}deg)`;const s=Math.sin(Math.PI*v)*.45;l.style.setProperty("--s",s.toFixed(3));l.querySelectorAll("i").forEach(x=>x.style.setProperty("--s",s.toFixed(3)))}
-function stack(){leaves.forEach((l,i)=>{l.style.zIndex=p[i]>=.5?i:L-i});}
-function info(){const r=2*k-1,l=2*k;$("#pgInfo").textContent=`Pages ${Math.min(r,P_)}–${Math.min(l,P_)}`}
-function anim(i,from,to,ms,done){const t0=performance.now();leaves[i].style.zIndex=999;busy=true;
- (function f(t){const u=Math.min(1,(t-t0)/(reduce?1:ms));set(i,from+(to-from)*ease(u));if(u<1)requestAnimationFrame(f);else{busy=false;stack();done&&done()}})(t0)}
-function turn(dir,ms=PAGE_FLIP_DURATION,done){if(busy)return;
- if(dir>0&&k<L-1){const i=k;k++;info();anim(i,p[i],1,ms,done)}
- else if(dir<0&&k>1){const i=k-1;k--;info();anim(i,p[i],0,ms,done)}}
-leaves.forEach((_,i)=>set(i,i<k?1:0));stack();info();
-/* auto flip */
-let ad=1;
-function sched(){clearTimeout(tAuto);if(!AUTO_FLIP_ENABLED||reduce||!visible||dragging)return;
- tAuto=setTimeout(()=>{if(busy||dragging){sched();return}
-  if(k>=L-1)ad=-1;else if(k<=1)ad=1;   /* never stops: reads forward, then back, then forward… */
-  turn(ad,PAGE_FLIP_DURATION,sched)},AUTO_FLIP_DELAY)}
-function touch(){clearTimeout(tAuto);clearTimeout(tRes);tRes=setTimeout(()=>{auto=0;sched()},AUTO_RESUME_DELAY)}
-new IntersectionObserver(e=>{visible=e[0].isIntersecting;visible?sched():clearTimeout(tAuto)},{threshold:.4}).observe(book);
-/* drag / tap */
-let sx=0,dir=0,idx=0,moved=false,pid=null;
-book.addEventListener("pointerdown",e=>{if(busy||e.button>0)return;touch();const r=book.getBoundingClientRect();sx=e.clientX;moved=false;pid=e.pointerId;
- dir=(e.clientX-r.left)<r.width/2?1:-1;idx=dir>0?k:k-1;if(idx<0||idx>=L-1)dir=0});
-book.addEventListener("pointermove",e=>{if(e.pointerId!==pid||!dir)return;const dx=e.clientX-sx,w=book.getBoundingClientRect().width/2;
- if(!moved&&Math.abs(dx)>8){moved=true;dragging=true;book.setPointerCapture(pid);leaves[idx].style.zIndex=999}
- if(moved){const u=Math.max(0,Math.min(1,Math.abs(dx)/w)),ok=dir>0?dx>0:dx<0;set(idx,dir>0?(ok?u:0):(ok?1-u:1))}});
-function end(e,cancel){if(e.pointerId!==pid)return;pid=null;touch();
- if(moved&&dir){dragging=false;const v=p[idx],fwd=dir>0,go=fwd?v>.35:v<.65;
-  if(go){fwd?k++:k--;info()}busy=false;anim(idx,v,go?(fwd?1:0):(fwd?0:1),PAGE_FLIP_DURATION*.6)}
- else if(!moved&&!cancel&&dir)turn(dir,PAGE_FLIP_DURATION*.8);
- dragging=false;dir=0}
-book.addEventListener("pointerup",e=>end(e));book.addEventListener("pointercancel",e=>end(e,true));
-book.addEventListener("keydown",e=>{if(e.key==="ArrowLeft"){turn(1);touch()}if(e.key==="ArrowRight"){turn(-1);touch()}});
-$("#nextP").onclick=()=>{turn(1);touch()};$("#prevP").onclick=()=>{turn(-1);touch()};
-})();
+/* ---------- Header scroll state ---------- */
+const header = document.getElementById('siteHeader');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, { passive:true });
+onScroll();
 
-/* ============ Registration ============ */
-const form=$("#reg"),box=$("#formbox"),ferr=$("#ferr");
-form.action=FORMSPREE_ENDPOINT;
-form.addEventListener("submit",async e=>{e.preventDefault();ferr.hidden=true;
- if(!form.checkValidity()){form.reportValidity();return}
- const st=document.createElement("div");st.className="ok";st.setAttribute("role","status");st.innerHTML='<div class="spin"></div><p>Submitting your registration...</p>';
- form.hidden=true;box.appendChild(st);
- try{
-  const r=await fetch(FORMSPREE_ENDPOINT,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}});
-  if(!r.ok)throw 0;
-  box.innerHTML=`<div class="ok" role="status"><div class="tick">${ic("check")}</div><h3>JazakAllahu Khayran!</h3><p>Your registration has been received successfully.</p><p>The free introductory class begins on 10 October 2026. Please join our WhatsApp group to receive class reminders, Zoom information and further announcements.</p><div class="cta-row"><a data-group class="btn b-g" href="#" target="_blank" rel="noopener">Join WhatsApp Group</a><a class="btn b-o" href="${WHATSAPP_URL}" target="_blank" rel="noopener">Chat With Us on WhatsApp</a></div></div>`;
-  wireGroup();box.scrollIntoView({behavior:"smooth",block:"center"});
- }catch(_){
-  st.remove();form.hidden=false;ferr.hidden=false;
-  ferr.innerHTML=`We couldn't submit your registration right now. Please try again or <a href="${WHATSAPP_URL}" target="_blank" rel="noopener" style="text-decoration:underline">contact us on WhatsApp</a>.`;
-  }});
+/* ---------- Mobile menu ---------- */
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+function closeMenu(){
+  mobileMenu.classList.remove('open');
+  hamburgerBtn.classList.remove('open');
+  hamburgerBtn.setAttribute('aria-expanded','false');
+}
+hamburgerBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  hamburgerBtn.classList.toggle('open', open);
+  hamburgerBtn.setAttribute('aria-expanded', String(open));
+});
+mobileMenu.querySelectorAll('.mm-link').forEach(a => a.addEventListener('click', closeMenu));
+
+/* ---------- Build waveform bars ---------- */
+const waveform = document.getElementById('waveform');
+for (let i=0;i<28;i++){
+  const bar = document.createElement('span');
+  const h = 4 + Math.round(Math.random()*16);
+  bar.style.height = h+'px';
+  bar.style.animationDelay = (i*0.05)+'s';
+  bar.style.setProperty('--h', h+'px');
+  waveform.appendChild(bar);
+}
+const waveStyle = document.createElement('style');
+waveStyle.textContent = `@keyframes wave{0%,100%{transform:scaleY(0.4)}50%{transform:scaleY(1)}}`;
+document.head.appendChild(waveStyle);
+
+/* ---------- Hero parallax (desktop only, respects reduced motion) ---------- */
+const heroVisual = document.getElementById('heroVisual');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduceMotion && window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+  const layers = heroVisual.querySelectorAll('.art-shape, .type-sample, .swatches, .sel-box, .crop, .cursor-dot, .canvas-frame');
+  heroVisual.addEventListener('mousemove', (e) => {
+    const rect = heroVisual.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    layers.forEach((el, i) => {
+      const depth = el.classList.contains('canvas-frame') ? 6 : 14 + (i%4)*6;
+      el.style.transform = (el.style.transform || '').replace(/translate3d\([^)]*\)/,'') ;
+      el.style.setProperty('--px', (x*depth)+'px');
+      el.style.setProperty('--py', (y*depth)+'px');
+      el.style.translate = `${x*depth}px ${y*depth}px`;
+    });
+  });
+  heroVisual.addEventListener('mouseleave', () => {
+    layers.forEach(el => { el.style.translate = '0 0'; });
+  });
+}
+
+/* ---------- Project grid render + filter ---------- */
+const grid = document.getElementById('projectGrid');
+function renderProjects(){
+  grid.innerHTML = CONFIG.projects.map((p, i) => {
+    const thumb = p.image || (p.youtubeId ? `https://img.youtube.com/vi/${p.youtubeId}/hqdefault.jpg` : '');
+    return `
+    <div class="project-card" data-cat="${p.category}" data-index="${i}" tabindex="0" role="button" aria-label="View ${p.title}">
+      <div class="project-media">
+        ${thumb
+          ? `<img src="${thumb}" alt="${p.title} — ${p.categoryLabel}" loading="lazy">`
+          : `<div class="ph-gradient" style="position:absolute;inset:0;background:${p.color}"></div><span class="ph-mark">${p.isVideo ? 'PLAY PREVIEW' : 'VIEW IMAGE'}</span>`}
+        ${p.isVideo ? '<span class="video-tag">Video</span>' : ''}
+        <div class="project-overlay">
+          <span class="overlay-link">View Project →</span>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="cat">${p.categoryLabel}</span>
+        <h3>${p.title}</h3>
+        <p>${p.desc}</p>
+      </div>
+    </div>
+  `;
+  }).join('');
+  attachCardEvents();
+}
+function attachCardEvents(){
+  grid.querySelectorAll('.project-card').forEach(card => {
+    const open = () => openModal(CONFIG.projects[+card.dataset.index]);
+    card.addEventListener('click', open);
+    card.addEventListener('keydown', (e) => { if(e.key==='Enter' || e.key===' '){ e.preventDefault(); open(); } });
+  });
+}
+renderProjects();
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    document.querySelectorAll('.project-card').forEach(card => {
+      const show = f==='all' || card.dataset.cat===f;
+      card.classList.toggle('hide', !show);
+    });
+  });
+});
+
+/* ---------- Modal ---------- */
+const modal = document.getElementById('projectModal');
+const modalCat = document.getElementById('modalCat');
+const modalTitle = document.getElementById('modalTitle');
+const modalDesc = document.getElementById('modalDesc');
+const modalVideo = document.getElementById('modalVideo');
+const modalClose = document.getElementById('modalClose');
+function openModal(p){
+  modalCat.textContent = p.categoryLabel;
+  modalTitle.textContent = p.title;
+  modalDesc.textContent = p.desc;
+  modal.querySelector('.modal-box').classList.toggle('vertical', !!p.vertical);
+
+  if (p.youtubeId) {
+    modalVideo.style.background = 'var(--bg-elev)';
+    modalVideo.innerHTML = `<iframe src="https://www.youtube.com/embed/${p.youtubeId}?fs=0&rel=0&modestbranding=1" title="${p.title}" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>`;
+  } else if (p.video) {
+    modalVideo.style.background = 'var(--bg-elev)';
+    modalVideo.innerHTML = `<video src="${p.video}" ${p.image ? `poster="${p.image}"` : ''} controls playsinline></video>`;
+  } else if (p.image) {
+    modalVideo.style.background = 'var(--bg-elev)';
+    modalVideo.innerHTML = `<img src="${p.image}" alt="${p.title}">`;
+  } else {
+    modalVideo.style.background = p.color;
+    modalVideo.innerHTML = `<div class="play-btn" role="img" aria-label="Play preview"></div><span class="modal-note">Video preview placeholder — replace with your showreel (muted, no autoplay)</span>`;
+  }
+
+  modal.classList.add('open');
+  modalClose.focus();
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+  const vid = modalVideo.querySelector('video');
+  if (vid) vid.pause();
+  const yt = modalVideo.querySelector('iframe');
+  if (yt) yt.src = '';
+}
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', (e) => { if(e.target===modal) closeModal(); });
+document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeModal(); });
+
+/* ---------- Tools ticker ---------- */
+const ticker = document.getElementById('toolsTicker');
+const toolsHtml = CONFIG.tools.map(t => `<div class="tool-badge"><span class="dot"></span><span>${t}</span></div>`).join('');
+ticker.innerHTML = toolsHtml + toolsHtml;
+
+/* ---------- Testimonials ---------- */
+const testiGrid = document.getElementById('testiGrid');
+testiGrid.innerHTML = CONFIG.testimonials.map(t => `
+  <div class="testi-card" data-reveal>
+    <div class="testi-mark">&ldquo;</div>
+    <p class="quote">${t.quote}</p>
+    <div class="testi-person">
+      <div class="avatar">${t.initials}</div>
+      <div>
+        <div class="name">${t.name}</div>
+        <div class="biz">${t.biz}</div>
+      </div>
+    </div>
+  </div>
+`).join('');
+
+/* ---------- Scroll reveal ---------- */
+const revealTargets = document.querySelectorAll('[data-reveal], .mt-step, .p-step');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealTargets.forEach(el => io.observe(el));
+} else {
+  revealTargets.forEach(el => el.classList.add('in-view'));
+}
+
+/* ---------- Contact form — submits to Formspree ---------- */
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+const formSubmitBtn = contactForm.querySelector('button[type="submit"]');
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  formStatus.textContent = 'Sending…';
+  formSubmitBtn.disabled = true;
+  try {
+    const response = await fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      formStatus.textContent = "Thanks — your message has been sent. I'll get back to you soon.";
+      contactForm.reset();
+    } else {
+      formStatus.textContent = "Something went wrong. Please try again or message on WhatsApp.";
+    }
+  } catch (err) {
+    formStatus.textContent = "Network error — please try again or message on WhatsApp.";
+  } finally {
+    formSubmitBtn.disabled = false;
+  }
+});
+
+/* ---------- Footer year ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
